@@ -169,7 +169,6 @@ Environment variables: `AICTE_DB`, `AICTE_VAR`, `AICTE_FERNET_KEY`, `AICTE_JWT_S
 ## Limitations and roadmap
 **Limitations**
 - Synthetic data from a few templates and a small test set; results do not predict real-world accuracy.
-- The prototype's six document types do not match the seven in APH Annexure-2 clause 2.1 (only the affidavit overlaps).
 - OCR accuracy drops on poor scans; tamper detection is heuristic with limited recall and can misfire on scan artefacts.
 - Issuer verification and the signature trust root are simulated; security is demo-grade (no MFA/SSO/KMS); not load-tested.
 
@@ -180,13 +179,5 @@ Environment variables: `AICTE_DB`, `AICTE_VAR`, `AICTE_FERNET_KEY`, `AICTE_JWT_S
 4. Improve OCR on degraded scans; add approval-history data for the three-year eligibility rule.
 
 ## Team
-**Team ImpactShift** · SIH 2026 · Team ID: `[fill in]` · College: `[fill in]` · Mentor: `[fill in]`
+**Team ImpactShift** · SIH 2026 · 
 
-| Member | Role |
-|---|---|
-| `[Name]` | `[Role]` |
-
-The prototype was developed with an AI assistant (Claude) under the team's direction.
-
-## License and disclaimer
-`[Choose a licence, e.g. MIT, or state "All rights reserved"]`. This project is a hackathon prototype with synthetic data. It is not affiliated with or endorsed by AICTE.

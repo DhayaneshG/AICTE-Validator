@@ -1,0 +1,43 @@
+{
+  "name_similarity_min": 75.0,
+  "low_confidence_below": 0.6,
+  "metadata_days_before_max": 5,
+  "metadata_days_after_max": 40,
+  "provenance": {
+    "tuned_on": "dev split only",
+    "dev_apps": 20,
+    "objective": "app-level F1 per defect; plateau median",
+    "name_f1_dev": 1.0,
+    "name_plateau": [
+      50,
+      100
+    ],
+    "metadata_f1_dev": 1.0,
+    "tuned_at": "fixed-date-for-reproducibility"
+  },
+  "tamper": {
+    "ela_quality": 90,
+    "ela_block": 32,
+    "ela_z": 30.0,
+    "ela_min_blocks": 3,
+    "noise_block": 16,
+    "noise_z": -2.5,
+    "noise_min_blocks": 10,
+    "noise_ink_max": 0.01,
+    "cm_patch_w": 160,
+    "cm_patch_h": 24,
+    "cm_ncc": 0.99,
+    "cm_min_ink": 0.05,
+    "cm_max_patches": 250,
+    "cm_min_components": 7,
+    "tl_z": 4.0,
+    "severity": {
+      "ela": "low",
+      "noise": "medium",
+      "copy_move": "medium",
+      "text_line": "low"
+    },
+    "max_per_type": 2
+  },
+  "tamper_provenance": "DEV split only: 32 tamper-set images (8 clean, 8 copy_move, 8 retype, 8 erase), grid search; TEST untouched until M11"
+}

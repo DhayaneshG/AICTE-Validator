@@ -1,0 +1,10 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "deploy": {
+    "startCommand": "bash start.sh",
+    "healthcheckPath": "/health",
+    "healthcheckTimeout": 600,
+    "restartPolicyType": "ON_FAILURE",
+    "numReplicas": 1
+  }
+}

@@ -1,0 +1,547 @@
+{
+ "_note": "MOCK scrutiny history (synthetic): stands in for the structured validation-report data source. Not real AICTE data.",
+ "institutions": {
+  "1-10487258103": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2024,
+    "outcome": "approved with conditions",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2023,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-18808006850": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 3
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 3
+   },
+   {
+    "year": 2023,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-23020154291": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-25007255813": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 3
+   }
+  ],
+  "1-25634709501": [
+   {
+    "year": 2025,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-27209549353": [
+   {
+    "year": 2025,
+    "outcome": "approved with conditions",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 2
+   }
+  ],
+  "1-27897181137": [
+   {
+    "year": 2025,
+    "outcome": "approved with conditions",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 1
+   }
+  ],
+  "1-28138552030": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 2
+   }
+  ],
+  "1-29848485517": [
+   {
+    "year": 2025,
+    "outcome": "approved with conditions",
+    "deficiencies_noted": 1
+   }
+  ],
+  "1-30995987559": [
+   {
+    "year": 2025,
+    "outcome": "approved with conditions",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2024,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 3
+   },
+   {
+    "year": 2023,
+    "outcome": "approved",
+    "deficiencies_noted": 2
+   }
+  ],
+  "1-33576300456": [
+   {
+    "year": 2025,
+    "outcome": "approved with conditions",
+    "deficiencies_noted": 3
+   }
+  ],
+  "1-34838683566": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-36567113117": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 2
+   }
+  ],
+  "1-37434064274": [
+   {
+    "year": 2025,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 1
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 1
+   }
+  ],
+  "1-37806758031": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 1
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 3
+   }
+  ],
+  "1-37976843575": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 3
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2023,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 2
+   }
+  ],
+  "1-38194647727": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 1
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-38387700990": [
+   {
+    "year": 2025,
+    "outcome": "approved with conditions",
+    "deficiencies_noted": 2
+   }
+  ],
+  "1-42072964582": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2024,
+    "outcome": "approved with conditions",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-48735092725": [
+   {
+    "year": 2025,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 2
+   },
+   {
+    "year": 2024,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2023,
+    "outcome": "approved with conditions",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-52998448873": [
+   {
+    "year": 2025,
+    "outcome": "approved with conditions",
+    "deficiencies_noted": 3
+   }
+  ],
+  "1-54764787985": [
+   {
+    "year": 2025,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 1
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-55045808051": [
+   {
+    "year": 2025,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2023,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-62840244242": [
+   {
+    "year": 2025,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 3
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 2
+   },
+   {
+    "year": 2023,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 3
+   }
+  ],
+  "1-64103440481": [
+   {
+    "year": 2025,
+    "outcome": "approved with conditions",
+    "deficiencies_noted": 3
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-65063247495": [
+   {
+    "year": 2025,
+    "outcome": "approved with conditions",
+    "deficiencies_noted": 1
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 1
+   },
+   {
+    "year": 2023,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-65069964652": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 1
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 3
+   }
+  ],
+  "1-69991184887": [
+   {
+    "year": 2025,
+    "outcome": "approved with conditions",
+    "deficiencies_noted": 3
+   }
+  ],
+  "1-70346771098": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2024,
+    "outcome": "approved with conditions",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2023,
+    "outcome": "approved",
+    "deficiencies_noted": 3
+   }
+  ],
+  "1-72444164009": [
+   {
+    "year": 2025,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 1
+   }
+  ],
+  "1-75699781599": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 3
+   }
+  ],
+  "1-77264638054": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 2
+   }
+  ],
+  "1-78409404617": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-81903986009": [
+   {
+    "year": 2025,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 3
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 1
+   },
+   {
+    "year": 2023,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-88814873856": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 1
+   },
+   {
+    "year": 2024,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 1
+   },
+   {
+    "year": 2023,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 3
+   }
+  ],
+  "1-89947766702": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-90705117606": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 3
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 3
+   }
+  ],
+  "1-91785202027": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-93055865312": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2023,
+    "outcome": "approved with conditions",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-93392116568": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 1
+   },
+   {
+    "year": 2024,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2023,
+    "outcome": "approved",
+    "deficiencies_noted": 3
+   }
+  ],
+  "1-94266066725": [
+   {
+    "year": 2025,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 0
+   },
+   {
+    "year": 2024,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 2
+   },
+   {
+    "year": 2023,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-98974626737": [
+   {
+    "year": 2025,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 1
+   }
+  ],
+  "1-99100122897": [
+   {
+    "year": 2025,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 2
+   },
+   {
+    "year": 2024,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-99146182606": [
+   {
+    "year": 2025,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 1
+   }
+  ],
+  "1-99247496268": [
+   {
+    "year": 2025,
+    "outcome": "approved",
+    "deficiencies_noted": 0
+   }
+  ],
+  "1-99507699758": [
+   {
+    "year": 2025,
+    "outcome": "clarification issued",
+    "deficiencies_noted": 0
+   }
+  ]
+ }
+}

@@ -1,0 +1,125 @@
+{
+ "note": "Synthetic signed PDFs (MOCK trust root).",
+ "items": [
+  {
+   "file": "sig_01_valid.pdf",
+   "kind": "valid",
+   "expected_status": "valid",
+   "split": "dev",
+   "source": "applications/APP-0001/upload_1.pdf",
+   "application_id": "APP-0001",
+   "doc_type": "affiliation_letter",
+   "sha256": "240114100c1ed36ac46bb432fd81e5a69dc0257cd1a2bb4161cbcd6c38df84c3"
+  },
+  {
+   "file": "sig_02_valid.pdf",
+   "kind": "valid",
+   "expected_status": "valid",
+   "split": "dev",
+   "source": "applications/APP-0002/upload_1.pdf",
+   "application_id": "APP-0002",
+   "doc_type": "previous_eoa_letter",
+   "sha256": "45995f16323513f7249503560ec6294bee778a0c2142deb5e210a0dc62038596"
+  },
+  {
+   "file": "sig_03_valid.pdf",
+   "kind": "valid",
+   "expected_status": "valid",
+   "split": "dev",
+   "source": "applications/APP-0006/upload_1.pdf",
+   "application_id": "APP-0006",
+   "doc_type": "affiliation_letter",
+   "sha256": "1ee5cb27babccda41e9808c988ebed6ef8b8f717b31a7b73d67aadb95467af92"
+  },
+  {
+   "file": "sig_04_valid.pdf",
+   "kind": "valid",
+   "expected_status": "valid",
+   "split": "dev",
+   "source": "applications/APP-0010/upload_1.pdf",
+   "application_id": "APP-0010",
+   "doc_type": "previous_eoa_letter",
+   "sha256": "ce3e7828050bd1d4c2892400b2a4516504485c57042248c1c2c983c3764d85f8"
+  },
+  {
+   "file": "sig_05_valid.pdf",
+   "kind": "valid",
+   "expected_status": "valid",
+   "split": "test",
+   "source": "applications/APP-0013/upload_1.pdf",
+   "application_id": "APP-0013",
+   "doc_type": "affidavit",
+   "sha256": "426b2a167bb47ce942d6f50e8e4caa81b98c516732f4bc2498b8046702dbbea4"
+  },
+  {
+   "file": "sig_06_valid.pdf",
+   "kind": "valid",
+   "expected_status": "valid",
+   "split": "test",
+   "source": "applications/APP-0016/upload_1.pdf",
+   "application_id": "APP-0016",
+   "doc_type": "affidavit",
+   "sha256": "be29e652d90fd89e759eed000fb69f0e078ed04e49bae6f9a0156a18ea46f560"
+  },
+  {
+   "file": "sig_07_valid.pdf",
+   "kind": "valid",
+   "expected_status": "valid",
+   "split": "test",
+   "source": "applications/APP-0019/upload_1.pdf",
+   "application_id": "APP-0019",
+   "doc_type": "affidavit",
+   "sha256": "33c9a38ef7295114f410d41498d329ee2804aa9b8699c98d1f3c3ac49a155efd"
+  },
+  {
+   "file": "sig_08_valid.pdf",
+   "kind": "valid",
+   "expected_status": "valid",
+   "split": "test",
+   "source": "applications/APP-0022/upload_1.pdf",
+   "application_id": "APP-0022",
+   "doc_type": "previous_eoa_letter",
+   "sha256": "b65669389760ae90060ef7ac4f91c26812559a780bf514d8a2db887ac21aa86e"
+  },
+  {
+   "file": "sig_09_tampered_after_signing.pdf",
+   "kind": "tampered_after_signing",
+   "expected_status": "modified_after_signing",
+   "split": "dev",
+   "source": "applications/APP-0011/upload_1.pdf",
+   "application_id": "APP-0011",
+   "doc_type": "previous_eoa_letter",
+   "sha256": "d469f234819479881a086831fb3b0d505571e22f7bbb143febff4197d9460322"
+  },
+  {
+   "file": "sig_10_untrusted_signer.pdf",
+   "kind": "untrusted_signer",
+   "expected_status": "untrusted_signer",
+   "split": "dev",
+   "source": "applications/APP-0020/upload_1.pdf",
+   "application_id": "APP-0020",
+   "doc_type": "affiliation_letter",
+   "sha256": "5c3f9180d23c9ed9aa1852d1a6bd176905d7f21a8445ab43632d73bcdd74da40"
+  },
+  {
+   "file": "sig_11_expired_certificate.pdf",
+   "kind": "expired_certificate",
+   "expected_status": "expired_certificate",
+   "split": "test",
+   "source": "applications/APP-0023/upload_1.pdf",
+   "application_id": "APP-0023",
+   "doc_type": "affiliation_letter",
+   "sha256": "58efe0c45c05b28534f64d85a92f06ad69559e6c1fb9c7121f32c85d5ef0a397"
+  },
+  {
+   "file": "sig_12_signer_not_authorised.pdf",
+   "kind": "signer_not_authorised",
+   "expected_status": "signer_not_authorised",
+   "split": "test",
+   "source": "applications/APP-0024/upload_1.pdf",
+   "application_id": "APP-0024",
+   "doc_type": "affidavit",
+   "sha256": "f4a601f672f2d2489618abc376edc1ee0140e157340479364d0b3ab256ef14e2"
+  }
+ ]
+}

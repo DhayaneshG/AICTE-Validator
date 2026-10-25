@@ -1,0 +1,87 @@
+{
+  "affidavit": {
+    "title_keywords": [
+      "affidavit"
+    ],
+    "expected_fields": [
+      "institution_name",
+      "institution_id",
+      "issue_date",
+      "intake",
+      "letter_id"
+    ],
+    "optional_fields": [
+      "proposed_intake"
+    ]
+  },
+  "noc": {
+    "title_keywords": [
+      "no objection",
+      "no-objection",
+      "noc"
+    ],
+    "expected_fields": [
+      "institution_name",
+      "institution_id",
+      "issue_date",
+      "expiry_date",
+      "reference_id"
+    ],
+    "optional_fields": []
+  },
+  "lease": {
+    "title_keywords": [
+      "lease deed",
+      "deed of lease",
+      "lease agreement"
+    ],
+    "expected_fields": [
+      "institution_name",
+      "issue_date",
+      "expiry_date"
+    ],
+    "optional_fields": []
+  },
+  "affiliation_letter": {
+    "title_keywords": [
+      "affiliation"
+    ],
+    "expected_fields": [
+      "institution_name",
+      "institution_id",
+      "issue_date",
+      "expiry_date",
+      "intake",
+      "reference_id"
+    ],
+    "optional_fields": []
+  },
+  "accreditation_certificate": {
+    "title_keywords": [
+      "accreditation"
+    ],
+    "expected_fields": [
+      "institution_name",
+      "institution_id",
+      "issue_date",
+      "expiry_date"
+    ],
+    "optional_fields": []
+  },
+  "previous_eoa_letter": {
+    "title_keywords": [
+      "extension of approval",
+      "eoa letter",
+      "approval letter"
+    ],
+    "expected_fields": [
+      "institution_name",
+      "institution_id",
+      "issue_date",
+      "expiry_date",
+      "intake",
+      "letter_id"
+    ],
+    "optional_fields": []
+  }
+}

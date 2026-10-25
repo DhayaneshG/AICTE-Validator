@@ -1,0 +1,2185 @@
+{
+ "generated": "2026-10-22T16:34:38+00:00",
+ "quick": false,
+ "split": "test",
+ "corpus": {
+  "apps_test": 20,
+  "apps_dev": 20,
+  "docs_test": 79,
+  "defects_test": {
+   "metadata_inconsistent": 2,
+   "intake_mismatch": 2,
+   "name_mismatch": 2,
+   "missing_document": 2,
+   "expired_lease": 2,
+   "qr_absent": 2,
+   "expired_accreditation": 2,
+   "duplicate_file": 2,
+   "qr_wrong_institution": 2
+  },
+  "defects_dev": {
+   "name_mismatch": 2,
+   "qr_absent": 2,
+   "metadata_inconsistent": 2,
+   "qr_wrong_institution": 2,
+   "intake_mismatch": 2,
+   "missing_document": 2,
+   "duplicate_file": 2,
+   "expired_lease": 2,
+   "expired_accreditation": 2
+  },
+  "clean_apps_test": 10
+ },
+ "extract": {
+  "split": "test",
+  "docs": 79,
+  "classification_accuracy": 1.0,
+  "field_accuracy_overall": 1.0,
+  "field_accuracy_n": 385,
+  "field_accuracy_by_field": {
+   "expiry_date": {
+    "correct": 60,
+    "n": 60,
+    "acc": 1.0
+   },
+   "institution_id": {
+    "correct": 65,
+    "n": 65,
+    "acc": 1.0
+   },
+   "institution_name": {
+    "correct": 79,
+    "n": 79,
+    "acc": 1.0
+   },
+   "intake": {
+    "correct": 44,
+    "n": 44,
+    "acc": 1.0
+   },
+   "issue_date": {
+    "correct": 79,
+    "n": 79,
+    "acc": 1.0
+   },
+   "letter_id": {
+    "correct": 25,
+    "n": 25,
+    "acc": 1.0
+   },
+   "reference_id": {
+    "correct": 33,
+    "n": 33,
+    "acc": 1.0
+   }
+  },
+  "bbox_contains_value": 1.0,
+  "qr_decode_accuracy": 1.0,
+  "qr_n": 33,
+  "errors": []
+ },
+ "defects_test_score": {
+  "split": "test",
+  "apps": 20,
+  "per_defect_app": {
+   "duplicate_file": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "expired_accreditation": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "expired_lease": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "intake_mismatch": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "metadata_inconsistent": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "missing_document": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "name_mismatch": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1": 0.6666666666666666
+   },
+   "qr_absent": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "qr_wrong_institution": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   }
+  },
+  "per_defect_doc": {
+   "duplicate_file": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "expired_accreditation": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "expired_lease": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "intake_mismatch": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "metadata_inconsistent": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "missing_document": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "name_mismatch": {
+    "tp": 1,
+    "fp": 1,
+    "fn": 1,
+    "precision": 0.5,
+    "recall": 0.5,
+    "f1": 0.5
+   },
+   "qr_absent": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "qr_wrong_institution": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   }
+  },
+  "clean_app_false_positives": {},
+  "other_hard_findings": {}
+ },
+ "defects_dev_score": {
+  "split": "dev",
+  "apps": 20,
+  "per_defect_app": {
+   "duplicate_file": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "expired_accreditation": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "expired_lease": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "intake_mismatch": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "metadata_inconsistent": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "missing_document": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "name_mismatch": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "qr_absent": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "qr_wrong_institution": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   }
+  },
+  "per_defect_doc": {
+   "duplicate_file": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "expired_accreditation": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "expired_lease": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "intake_mismatch": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "metadata_inconsistent": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "missing_document": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "name_mismatch": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "qr_absent": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "qr_wrong_institution": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   }
+  },
+  "clean_app_false_positives": {},
+  "other_hard_findings": {}
+ },
+ "name_sensitivity": {
+  "configured": 75.0,
+  "rows": [
+   {
+    "threshold": 60,
+    "tp": 0,
+    "fp": 0,
+    "fn": 2,
+    "precision": null,
+    "recall": 0.0,
+    "f1": null,
+    "clean_fp": 0
+   },
+   {
+    "threshold": 70,
+    "tp": 1,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1": 0.6666666666666666,
+    "clean_fp": 0
+   },
+   {
+    "threshold": 76,
+    "tp": 1,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1": 0.6666666666666666,
+    "clean_fp": 0
+   },
+   {
+    "threshold": 80,
+    "tp": 1,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1": 0.6666666666666666,
+    "clean_fp": 0
+   },
+   {
+    "threshold": 84,
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "clean_fp": 0
+   },
+   {
+    "threshold": 88,
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "clean_fp": 0
+   },
+   {
+    "threshold": 92,
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "clean_fp": 0
+   },
+   {
+    "threshold": 96,
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "clean_fp": 0
+   },
+   {
+    "threshold": 100,
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "clean_fp": 0
+   }
+  ]
+ },
+ "verification": {
+  "statuses": {
+   "verified": 28,
+   "mismatch": 4,
+   "pending": 1
+  },
+  "non_verified_reasons": {
+   "mismatch:not_found": 2,
+   "mismatch:institution_mismatch": 2,
+   "pending:issuer_confirmation_pending": 1
+  },
+  "documents_verified": 33,
+  "under_total_outage_MOCK": {
+   "source_unavailable": 33
+  }
+ },
+ "evidence": {
+  "findings": 20,
+  "with_evidence_text": 20,
+  "with_page_and_bbox": 16,
+  "rules_without_location": {
+   "R-MISS": 2,
+   "R-DUP": 2
+  }
+ },
+ "timing_digital": {
+  "applications": 20,
+  "documents": 79,
+  "seconds_per_application": 2.009594609499709,
+  "seconds_per_document": 0.508758128987268
+ },
+ "ocr": {
+  "split": "test",
+  "levels": {
+   "1": {
+    "files": 29,
+    "pages": 35,
+    "cer": 0.09164923644378473,
+    "field_accuracy": 0.8297872340425532,
+    "fields_n": 141,
+    "wrong_fields_flagged_for_review": 13,
+    "wrong_fields_silent": 11,
+    "correct_fields_flagged_for_review": 0,
+    "classification_accuracy": 1.0,
+    "qr_decode_rate": 1.0,
+    "qr_n": 13,
+    "seconds_per_page": 4.8125488150856,
+    "field_accuracy_by_field": {
+     "expiry_date": [
+      19,
+      22
+     ],
+     "institution_id": [
+      20,
+      23
+     ],
+     "institution_name": [
+      21,
+      29
+     ],
+     "intake": [
+      16,
+      16
+     ],
+     "issue_date": [
+      24,
+      29
+     ],
+     "letter_id": [
+      7,
+      9
+     ],
+     "reference_id": [
+      10,
+      13
+     ]
+    },
+    "errors": [
+     [
+      "APP-0003",
+      "upload_1.pdf",
+      "institution_name",
+      "Netaji Virk Institute of Science and Technology (Autonomous)",
+      "Netaji Virk Institute ofScience and Technology (Autonomous)",
+      0.93
+     ],
+     [
+      "APP-0003",
+      "upload_2.pdf",
+      "institution_name",
+      "Netaji Virk Inst. of Science & Tech.",
+      "Netaji Virk Inst. ofScience & Tech.",
+      0.91
+     ],
+     [
+      "APP-0003",
+      "upload_3.pdf",
+      "institution_name",
+      "Netaji Virk Institute of Science and Technology, Indore",
+      "Netaji Virk Institute ofScience and Technology, Indore",
+      0.92
+     ],
+     [
+      "APP-0003",
+      "upload_3.pdf",
+      "reference_id",
+      "AFL-CRO-2025-0004114",
+      null,
+      0.18
+     ],
+     [
+      "APP-0008",
+      "upload_2.pdf",
+      "institution_id",
+      "1-23020154291",
+      null,
+      0.19
+     ],
+     [
+      "APP-0008",
+      "upload_2.pdf",
+      "issue_date",
+      "2025-01-22",
+      null,
+      0.19
+     ],
+     [
+      "APP-0008",
+      "upload_4.pdf",
+      "institution_id",
+      "1-23020154291",
+      null,
+      0.19
+     ],
+     [
+      "APP-0008",
+      "upload_4.pdf",
+      "issue_date",
+      "2025-01-31",
+      null,
+      0.18
+     ],
+     [
+      "APP-0008",
+      "upload_4.pdf",
+      "expiry_date",
+      "2028-01-31",
+      null,
+      0.18
+     ],
+     [
+      "APP-0009",
+      "upload_1.pdf",
+      "institution_id",
+      "1-70346771098",
+      null,
+      0.19
+     ],
+     [
+      "APP-0009",
+      "upload_1.pdf",
+      "issue_date",
+      "2026-01-30",
+      null,
+      0.19
+     ],
+     [
+      "APP-0009",
+      "upload_1.pdf",
+      "letter_id",
+      "ERO/1-70346771098/2025/EOA",
+      null,
+      null
+     ],
+     [
+      "APP-0028",
+      "upload_1.pdf",
+      "institution_name",
+      "M/s Crescent Kothari School of Engineering and Technology",
+      "M/s Crescent Kothari School ofEngineering and Technology",
+      0.92
+     ],
+     [
+      "APP-0028",
+      "upload_2.pdf",
+      "institution_name",
+      "Crescent Kothari School of Engineering and Technology, Coimbatore",
+      "Crescent Kothari School of Engineering and T echnology, Coimbatore",
+      0.96
+     ],
+     [
+      "APP-0028",
+      "upload_2.pdf",
+      "expiry_date",
+      "2035-01-24",
+      null,
+      0.19
+     ],
+     [
+      "APP-0028",
+      "upload_3.pdf",
+      "issue_date",
+      "2026-02-17",
+      "2026-02-07",
+      0.97
+     ],
+     [
+      "APP-0028",
+      "upload_4.pdf",
+      "reference_id",
+      "AFL-SRO-2025-0004257",
+      null,
+      0.19
+     ],
+     [
+      "APP-0033",
+      "upload_2.pdf",
+      "institution_name",
+      "Saraswathi Pau School of Engineering & Tech.",
+      "Saraswathi Pau School ofEngineering & Tech.",
+      0.91
+     ],
+     [
+      "APP-0034",
+      "upload_2.pdf",
+      "letter_id",
+      "CRO/1-10487258103/2025/EOA",
+      "RO/1-10487258103/2025/EOA",
+      0.67
+     ],
+     [
+      "APP-0034",
+      "upload_3.pdf",
+      "institution_name",
+      "Saraswathi Sant Institute of Engineering and Technology (Autonomous)",
+      "Saraswathi Sant Institute of Engineering and T echnology (Autonomous)",
+      0.96
+     ],
+     [
+      "APP-0034",
+      "upload_5.pdf",
+      "reference_id",
+      "NOC-CRO-2025-0004299",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_1.pdf",
+      "expiry_date",
+      "2028-03-19",
+      null,
+      0.19
+     ],
+     [
+      "APP-0040",
+      "upload_3.pdf",
+      "issue_date",
+      "2026-02-15",
+      "2026-02-05",
+      0.93
+     ],
+     [
+      "APP-0040",
+      "upload_4.pdf",
+      "institution_name",
+      "Ganga Din Institute of Science & Tech.",
+      "Ganga Din Institute of Science & Tech .",
+      0.92
+     ]
+    ]
+   },
+   "2": {
+    "files": 29,
+    "pages": 35,
+    "cer": 0.147740818208398,
+    "field_accuracy": 0.6028368794326241,
+    "fields_n": 141,
+    "wrong_fields_flagged_for_review": 49,
+    "wrong_fields_silent": 7,
+    "correct_fields_flagged_for_review": 0,
+    "classification_accuracy": 1.0,
+    "qr_decode_rate": 1.0,
+    "qr_n": 13,
+    "seconds_per_page": 4.928488979000031,
+    "field_accuracy_by_field": {
+     "expiry_date": [
+      11,
+      22
+     ],
+     "institution_id": [
+      20,
+      23
+     ],
+     "institution_name": [
+      10,
+      29
+     ],
+     "intake": [
+      10,
+      16
+     ],
+     "issue_date": [
+      16,
+      29
+     ],
+     "letter_id": [
+      8,
+      9
+     ],
+     "reference_id": [
+      10,
+      13
+     ]
+    },
+    "errors": [
+     [
+      "APP-0003",
+      "upload_1.pdf",
+      "institution_name",
+      "Netaji Virk Institute of Science and Technology (Autonomous)",
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_1.pdf",
+      "issue_date",
+      "2026-02-24",
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_1.pdf",
+      "intake",
+      60,
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_2.pdf",
+      "institution_name",
+      "Netaji Virk Inst. of Science & Tech.",
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_2.pdf",
+      "expiry_date",
+      "2026-06-30",
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_2.pdf",
+      "intake",
+      60,
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_3.pdf",
+      "institution_name",
+      "Netaji Virk Institute of Science and Technology, Indore",
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_3.pdf",
+      "issue_date",
+      "2025-09-02",
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_3.pdf",
+      "expiry_date",
+      "2028-09-01",
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_3.pdf",
+      "intake",
+      60,
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_3.pdf",
+      "reference_id",
+      "AFL-CRO-2025-0004114",
+      null,
+      null
+     ],
+     [
+      "APP-0008",
+      "upload_3.pdf",
+      "institution_name",
+      "M/s Shri Munshi Institute of Science and Technology",
+      null,
+      null
+     ],
+     [
+      "APP-0008",
+      "upload_3.pdf",
+      "issue_date",
+      "2026-02-18",
+      null,
+      null
+     ],
+     [
+      "APP-0008",
+      "upload_4.pdf",
+      "institution_id",
+      "1-23020154291",
+      null,
+      0.19
+     ],
+     [
+      "APP-0008",
+      "upload_4.pdf",
+      "expiry_date",
+      "2028-01-31",
+      null,
+      0.18
+     ],
+     [
+      "APP-0008",
+      "upload_4.pdf",
+      "reference_id",
+      "AFL-SWRO-2025-0004148",
+      null,
+      0.19
+     ],
+     [
+      "APP-0009",
+      "upload_1.pdf",
+      "institution_name",
+      "Kapur Institute of Technology, Kolkata",
+      "Kapur Institute ofTechnology. Kolkata",
+      0.95
+     ],
+     [
+      "APP-0009",
+      "upload_1.pdf",
+      "institution_id",
+      "1-70346771098",
+      null,
+      0.19
+     ],
+     [
+      "APP-0009",
+      "upload_1.pdf",
+      "letter_id",
+      "ERO/1-70346771098/2025/EOA",
+      null,
+      0.18
+     ],
+     [
+      "APP-0009",
+      "upload_2.pdf",
+      "institution_name",
+      "Heritage Boase Institute of Technology",
+      "Heritage Boase: Institute of Technology",
+      0.95
+     ],
+     [
+      "APP-0012",
+      "upload_1.pdf",
+      "institution_name",
+      "Sri Chakraborty School of Engineering and Technology, Nagpur",
+      "Sri Chakraborty School of Engineering and Technology. Nagpur",
+      0.95
+     ],
+     [
+      "APP-0012",
+      "upload_1.pdf",
+      "reference_id",
+      "AFL-WRO-2025-0004157",
+      null,
+      0.19
+     ],
+     [
+      "APP-0012",
+      "upload_3.pdf",
+      "institution_name",
+      "Sri Chakraborty School of Engineering and Technology (Autonomous)",
+      null,
+      null
+     ],
+     [
+      "APP-0012",
+      "upload_3.pdf",
+      "issue_date",
+      "2015-02-08",
+      null,
+      null
+     ],
+     [
+      "APP-0012",
+      "upload_3.pdf",
+      "expiry_date",
+      "2026-02-05",
+      null,
+      null
+     ],
+     [
+      "APP-0028",
+      "upload_1.pdf",
+      "institution_name",
+      "M/s Crescent Kothari School of Engineering and Technology",
+      null,
+      null
+     ],
+     [
+      "APP-0028",
+      "upload_1.pdf",
+      "expiry_date",
+      "2027-07-15",
+      null,
+      null
+     ],
+     [
+      "APP-0028",
+      "upload_2.pdf",
+      "institution_name",
+      "Crescent Kothari School of Engineering and Technology, Coimbatore",
+      "Crescent Kothari School of Engineering and Technology . C oimbatore",
+      0.96
+     ],
+     [
+      "APP-0028",
+      "upload_2.pdf",
+      "issue_date",
+      "2024-01-27",
+      null,
+      0.19
+     ],
+     [
+      "APP-0028",
+      "upload_2.pdf",
+      "expiry_date",
+      "2035-01-24",
+      null,
+      0.19
+     ],
+     [
+      "APP-0028",
+      "upload_3.pdf",
+      "issue_date",
+      "2026-02-17",
+      "2026-02-07",
+      0.97
+     ],
+     [
+      "APP-0028",
+      "upload_4.pdf",
+      "institution_name",
+      "Crescent Kothari School of Engg. & Tech.",
+      "Crescent Kothari Schoel of Engg. & Tech",
+      0.84
+     ],
+     [
+      "APP-0033",
+      "upload_1.pdf",
+      "institution_id",
+      "1-37434064274",
+      "1-37434054274",
+      0.93
+     ],
+     [
+      "APP-0033",
+      "upload_2.pdf",
+      "institution_name",
+      "Saraswathi Pau School of Engineering & Tech.",
+      null,
+      null
+     ],
+     [
+      "APP-0033",
+      "upload_2.pdf",
+      "issue_date",
+      "2025-12-05",
+      null,
+      null
+     ],
+     [
+      "APP-0033",
+      "upload_2.pdf",
+      "expiry_date",
+      "2028-12-04",
+      null,
+      null
+     ],
+     [
+      "APP-0033",
+      "upload_2.pdf",
+      "intake",
+      300,
+      null,
+      null
+     ],
+     [
+      "APP-0033",
+      "upload_3.pdf",
+      "issue_date",
+      "2023-05-03",
+      null,
+      null
+     ],
+     [
+      "APP-0033",
+      "upload_4.pdf",
+      "institution_name",
+      "Saraswathi Pau School of Engineering and Technology",
+      null,
+      null
+     ],
+     [
+      "APP-0033",
+      "upload_4.pdf",
+      "issue_date",
+      "2026-03-08",
+      null,
+      null
+     ],
+     [
+      "APP-0033",
+      "upload_4.pdf",
+      "intake",
+      300,
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_1.pdf",
+      "institution_name",
+      "Saraswathi Sant Institute of Engineering and Technology, Raipur",
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_1.pdf",
+      "expiry_date",
+      "2027-06-27",
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_2.pdf",
+      "institution_name",
+      "Saraswathi Sant Institute of Engineering & Technology",
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_2.pdf",
+      "issue_date",
+      "2026-02-27",
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_2.pdf",
+      "intake",
+      360,
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_5.pdf",
+      "institution_name",
+      "Saraswathi Sant Inst. of Engg. and Technology",
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_5.pdf",
+      "issue_date",
+      "2025-09-30",
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_5.pdf",
+      "expiry_date",
+      "2028-09-29",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_2.pdf",
+      "institution_name",
+      "Ganga Din Institute of Science and Technology (Autonomous)",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_2.pdf",
+      "issue_date",
+      "2014-04-17",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_2.pdf",
+      "expiry_date",
+      "2025-04-14",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_3.pdf",
+      "institution_name",
+      "Ganga Din Institute of Science and Technology",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_4.pdf",
+      "institution_name",
+      "Ganga Din Institute of Science & Tech.",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_4.pdf",
+      "issue_date",
+      "2024-07-22",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_4.pdf",
+      "expiry_date",
+      "2027-07-22",
+      null,
+      null
+     ]
+    ]
+   },
+   "3": {
+    "files": 29,
+    "pages": 35,
+    "cer": 0.16712772417515687,
+    "field_accuracy": 0.49645390070921985,
+    "fields_n": 141,
+    "wrong_fields_flagged_for_review": 60,
+    "wrong_fields_silent": 11,
+    "correct_fields_flagged_for_review": 0,
+    "classification_accuracy": 1.0,
+    "qr_decode_rate": 1.0,
+    "qr_n": 13,
+    "seconds_per_page": 4.708952873342787,
+    "field_accuracy_by_field": {
+     "expiry_date": [
+      7,
+      22
+     ],
+     "institution_id": [
+      22,
+      23
+     ],
+     "institution_name": [
+      6,
+      29
+     ],
+     "intake": [
+      8,
+      16
+     ],
+     "issue_date": [
+      9,
+      29
+     ],
+     "letter_id": [
+      8,
+      9
+     ],
+     "reference_id": [
+      10,
+      13
+     ]
+    },
+    "errors": [
+     [
+      "APP-0003",
+      "upload_1.pdf",
+      "institution_name",
+      "Netaji Virk Institute of Science and Technology (Autonomous)",
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_1.pdf",
+      "intake",
+      60,
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_1.pdf",
+      "letter_id",
+      "CRO/1-33576300456/2025/EOA",
+      "RO/1-33576300456/2025/EOA",
+      0.69
+     ],
+     [
+      "APP-0003",
+      "upload_2.pdf",
+      "institution_name",
+      "Netaji Virk Inst. of Science & Tech.",
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_2.pdf",
+      "issue_date",
+      "2025-04-27",
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_2.pdf",
+      "expiry_date",
+      "2026-06-30",
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_3.pdf",
+      "institution_name",
+      "Netaji Virk Institute of Science and Technology, Indore",
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_3.pdf",
+      "issue_date",
+      "2025-09-02",
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_3.pdf",
+      "expiry_date",
+      "2028-09-01",
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_3.pdf",
+      "intake",
+      60,
+      null,
+      null
+     ],
+     [
+      "APP-0003",
+      "upload_3.pdf",
+      "reference_id",
+      "AFL-CRO-2025-0004114",
+      null,
+      null
+     ],
+     [
+      "APP-0008",
+      "upload_1.pdf",
+      "institution_name",
+      "Shri Munshi Institute of Science and Technology, Mysuru",
+      "Shri Munshi Insti tute of Science and Technology, Mysuru",
+      0.95
+     ],
+     [
+      "APP-0008",
+      "upload_3.pdf",
+      "institution_name",
+      "M/s Shri Munshi Institute of Science and Technology",
+      null,
+      null
+     ],
+     [
+      "APP-0008",
+      "upload_3.pdf",
+      "issue_date",
+      "2026-02-18",
+      null,
+      null
+     ],
+     [
+      "APP-0008",
+      "upload_3.pdf",
+      "intake",
+      360,
+      null,
+      null
+     ],
+     [
+      "APP-0008",
+      "upload_4.pdf",
+      "institution_id",
+      "1-23020154291",
+      null,
+      0.19
+     ],
+     [
+      "APP-0008",
+      "upload_4.pdf",
+      "issue_date",
+      "2025-01-31",
+      null,
+      0.16
+     ],
+     [
+      "APP-0008",
+      "upload_4.pdf",
+      "expiry_date",
+      "2028-01-31",
+      null,
+      0.17
+     ],
+     [
+      "APP-0008",
+      "upload_4.pdf",
+      "reference_id",
+      "AFL-SWRO-2025-0004148",
+      null,
+      0.19
+     ],
+     [
+      "APP-0009",
+      "upload_1.pdf",
+      "institution_name",
+      "Kapur Institute of Technology, Kolkata",
+      "Kapur Institute of Technology. Kolkata",
+      0.95
+     ],
+     [
+      "APP-0009",
+      "upload_1.pdf",
+      "issue_date",
+      "2026-01-30",
+      null,
+      0.19
+     ],
+     [
+      "APP-0009",
+      "upload_2.pdf",
+      "issue_date",
+      "2025-06-22",
+      null,
+      0.19
+     ],
+     [
+      "APP-0012",
+      "upload_1.pdf",
+      "institution_name",
+      "Sri Chakraborty School of Engineering and Technology, Nagpur",
+      "Sri Chakraborty School of Engineering and Technology. Nagpur",
+      0.95
+     ],
+     [
+      "APP-0012",
+      "upload_2.pdf",
+      "institution_name",
+      "Sri Chakraborty School of Engineering and Technology",
+      null,
+      null
+     ],
+     [
+      "APP-0012",
+      "upload_2.pdf",
+      "expiry_date",
+      "2028-07-26",
+      null,
+      null
+     ],
+     [
+      "APP-0012",
+      "upload_3.pdf",
+      "institution_name",
+      "Sri Chakraborty School of Engineering and Technology (Autonomous)",
+      null,
+      null
+     ],
+     [
+      "APP-0012",
+      "upload_3.pdf",
+      "issue_date",
+      "2015-02-08",
+      null,
+      null
+     ],
+     [
+      "APP-0012",
+      "upload_3.pdf",
+      "expiry_date",
+      "2026-02-05",
+      null,
+      null
+     ],
+     [
+      "APP-0028",
+      "upload_1.pdf",
+      "institution_name",
+      "M/s Crescent Kothari School of Engineering and Technology",
+      null,
+      null
+     ],
+     [
+      "APP-0028",
+      "upload_1.pdf",
+      "issue_date",
+      "2024-07-15",
+      null,
+      null
+     ],
+     [
+      "APP-0028",
+      "upload_1.pdf",
+      "expiry_date",
+      "2027-07-15",
+      null,
+      null
+     ],
+     [
+      "APP-0028",
+      "upload_2.pdf",
+      "institution_name",
+      "Crescent Kothari School of Engineering and Technology, Coimbatore",
+      "Crescent Kothari School of Engineering and Technology. Coimbatore",
+      0.95
+     ],
+     [
+      "APP-0028",
+      "upload_2.pdf",
+      "issue_date",
+      "2024-01-27",
+      null,
+      0.19
+     ],
+     [
+      "APP-0028",
+      "upload_2.pdf",
+      "expiry_date",
+      "2035-01-24",
+      null,
+      0.19
+     ],
+     [
+      "APP-0028",
+      "upload_3.pdf",
+      "issue_date",
+      "2026-02-17",
+      "2026-02-07",
+      0.97
+     ],
+     [
+      "APP-0028",
+      "upload_4.pdf",
+      "institution_name",
+      "Crescent Kothari School of Engg. & Tech.",
+      "Crescent- Kothari SchooL of. Engg, s Tech.",
+      0.82
+     ],
+     [
+      "APP-0028",
+      "upload_4.pdf",
+      "issue_date",
+      "2025-06-06",
+      null,
+      null
+     ],
+     [
+      "APP-0028",
+      "upload_4.pdf",
+      "expiry_date",
+      "2028-06-05",
+      "2026-06-05",
+      0.93
+     ],
+     [
+      "APP-0033",
+      "upload_1.pdf",
+      "institution_name",
+      "Saraswathi Pau School of Engineering & Technology",
+      "Saraswathi Pau School of Engineering k Technoloqy",
+      0.87
+     ],
+     [
+      "APP-0033",
+      "upload_1.pdf",
+      "expiry_date",
+      "2028-04-06",
+      null,
+      null
+     ],
+     [
+      "APP-0033",
+      "upload_1.pdf",
+      "reference_id",
+      "NOC-CRO-2025-0004281",
+      null,
+      0.19
+     ],
+     [
+      "APP-0033",
+      "upload_2.pdf",
+      "institution_name",
+      "Saraswathi Pau School of Engineering & Tech.",
+      null,
+      null
+     ],
+     [
+      "APP-0033",
+      "upload_2.pdf",
+      "issue_date",
+      "2025-12-05",
+      null,
+      null
+     ],
+     [
+      "APP-0033",
+      "upload_2.pdf",
+      "expiry_date",
+      "2028-12-04",
+      null,
+      null
+     ],
+     [
+      "APP-0033",
+      "upload_2.pdf",
+      "intake",
+      300,
+      null,
+      null
+     ],
+     [
+      "APP-0033",
+      "upload_3.pdf",
+      "issue_date",
+      "2023-05-03",
+      null,
+      null
+     ],
+     [
+      "APP-0033",
+      "upload_4.pdf",
+      "institution_name",
+      "Saraswathi Pau School of Engineering and Technology",
+      null,
+      null
+     ],
+     [
+      "APP-0033",
+      "upload_4.pdf",
+      "issue_date",
+      "2026-03-08",
+      null,
+      null
+     ],
+     [
+      "APP-0033",
+      "upload_4.pdf",
+      "intake",
+      300,
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_1.pdf",
+      "institution_name",
+      "Saraswathi Sant Institute of Engineering and Technology, Raipur",
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_1.pdf",
+      "issue_date",
+      "2024-06-27",
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_1.pdf",
+      "expiry_date",
+      "2027-06-27",
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_2.pdf",
+      "institution_name",
+      "Saraswathi Sant Institute of Engineering & Technology",
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_2.pdf",
+      "issue_date",
+      "2026-02-27",
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_2.pdf",
+      "intake",
+      360,
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_4.pdf",
+      "institution_name",
+      "Saraswathi Sant Institute of Engineering and Technology (Autonomous)",
+      "Saraswathi Sant Institute of Engineering and Technology (Aut onomous )",
+      0.94
+     ],
+     [
+      "APP-0034",
+      "upload_5.pdf",
+      "institution_name",
+      "Saraswathi Sant Inst. of Engg. and Technology",
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_5.pdf",
+      "issue_date",
+      "2025-09-30",
+      null,
+      null
+     ],
+     [
+      "APP-0034",
+      "upload_5.pdf",
+      "expiry_date",
+      "2028-09-29",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_1.pdf",
+      "institution_name",
+      "GANGA DIN INSTITUTE OF SCIENCE AND TECHNOLOGY",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_1.pdf",
+      "expiry_date",
+      "2028-03-19",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_1.pdf",
+      "intake",
+      180,
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_2.pdf",
+      "institution_name",
+      "Ganga Din Institute of Science and Technology (Autonomous)",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_2.pdf",
+      "issue_date",
+      "2014-04-17",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_2.pdf",
+      "expiry_date",
+      "2025-04-14",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_3.pdf",
+      "institution_name",
+      "Ganga Din Institute of Science and Technology",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_3.pdf",
+      "issue_date",
+      "2026-02-15",
+      "2026-02-05",
+      0.93
+     ],
+     [
+      "APP-0040",
+      "upload_3.pdf",
+      "intake",
+      180,
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_4.pdf",
+      "institution_name",
+      "Ganga Din Institute of Science & Tech.",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_4.pdf",
+      "issue_date",
+      "2024-07-22",
+      null,
+      null
+     ],
+     [
+      "APP-0040",
+      "upload_4.pdf",
+      "expiry_date",
+      "2027-07-22",
+      null,
+      null
+     ]
+    ]
+   }
+  }
+ },
+ "signatures": {
+  "n": 6,
+  "correct": 6,
+  "rows": [
+   {
+    "file": "sig_05_valid.pdf",
+    "kind": "valid",
+    "expected": "valid",
+    "got": "valid",
+    "ok": true
+   },
+   {
+    "file": "sig_06_valid.pdf",
+    "kind": "valid",
+    "expected": "valid",
+    "got": "valid",
+    "ok": true
+   },
+   {
+    "file": "sig_07_valid.pdf",
+    "kind": "valid",
+    "expected": "valid",
+    "got": "valid",
+    "ok": true
+   },
+   {
+    "file": "sig_08_valid.pdf",
+    "kind": "valid",
+    "expected": "valid",
+    "got": "valid",
+    "ok": true
+   },
+   {
+    "file": "sig_11_expired_certificate.pdf",
+    "kind": "expired_certificate",
+    "expected": "expired_certificate",
+    "got": "expired_certificate",
+    "ok": true
+   },
+   {
+    "file": "sig_12_signer_not_authorised.pdf",
+    "kind": "signer_not_authorised",
+    "expected": "signer_not_authorised",
+    "got": "signer_not_authorised",
+    "ok": true
+   }
+  ]
+ },
+ "signatures_all": {
+  "n": 12,
+  "correct": 12,
+  "rows": [
+   {
+    "file": "sig_01_valid.pdf",
+    "kind": "valid",
+    "expected": "valid",
+    "got": "valid",
+    "ok": true
+   },
+   {
+    "file": "sig_02_valid.pdf",
+    "kind": "valid",
+    "expected": "valid",
+    "got": "valid",
+    "ok": true
+   },
+   {
+    "file": "sig_03_valid.pdf",
+    "kind": "valid",
+    "expected": "valid",
+    "got": "valid",
+    "ok": true
+   },
+   {
+    "file": "sig_04_valid.pdf",
+    "kind": "valid",
+    "expected": "valid",
+    "got": "valid",
+    "ok": true
+   },
+   {
+    "file": "sig_05_valid.pdf",
+    "kind": "valid",
+    "expected": "valid",
+    "got": "valid",
+    "ok": true
+   },
+   {
+    "file": "sig_06_valid.pdf",
+    "kind": "valid",
+    "expected": "valid",
+    "got": "valid",
+    "ok": true
+   },
+   {
+    "file": "sig_07_valid.pdf",
+    "kind": "valid",
+    "expected": "valid",
+    "got": "valid",
+    "ok": true
+   },
+   {
+    "file": "sig_08_valid.pdf",
+    "kind": "valid",
+    "expected": "valid",
+    "got": "valid",
+    "ok": true
+   },
+   {
+    "file": "sig_09_tampered_after_signing.pdf",
+    "kind": "tampered_after_signing",
+    "expected": "modified_after_signing",
+    "got": "modified_after_signing",
+    "ok": true
+   },
+   {
+    "file": "sig_10_untrusted_signer.pdf",
+    "kind": "untrusted_signer",
+    "expected": "untrusted_signer",
+    "got": "untrusted_signer",
+    "ok": true
+   },
+   {
+    "file": "sig_11_expired_certificate.pdf",
+    "kind": "expired_certificate",
+    "expected": "expired_certificate",
+    "got": "expired_certificate",
+    "ok": true
+   },
+   {
+    "file": "sig_12_signer_not_authorised.pdf",
+    "kind": "signer_not_authorised",
+    "expected": "signer_not_authorised",
+    "got": "signer_not_authorised",
+    "ok": true
+   }
+  ]
+ },
+ "tamper": {
+  "split": "test",
+  "n": 32,
+  "per_class": {
+   "clean": {
+    "n": 8,
+    "flagged": 0,
+    "localised": 0,
+    "flagged_medium": 0
+   },
+   "copy_move": {
+    "n": 8,
+    "flagged": 4,
+    "localised": 3,
+    "flagged_medium": 1
+   },
+   "retype": {
+    "n": 8,
+    "flagged": 8,
+    "localised": 6,
+    "flagged_medium": 7
+   },
+   "erase": {
+    "n": 8,
+    "flagged": 7,
+    "localised": 7,
+    "flagged_medium": 7
+   }
+  },
+  "detector_hits_by_class": {
+   "copy_move": {
+    "retype": 2,
+    "copy_move": 1
+   },
+   "noise": {
+    "erase": 7,
+    "retype": 6
+   },
+   "ela": {
+    "copy_move": 3,
+    "erase": 4,
+    "retype": 5
+   }
+  },
+  "tampered_flag_recall": 0.7916666666666666,
+  "precision": 1.0,
+  "clean_false_positive_rate": 0.0,
+  "params": {
+   "ela_quality": 90,
+   "ela_block": 32,
+   "ela_z": 30.0,
+   "ela_min_blocks": 3,
+   "noise_block": 16,
+   "noise_z": -2.5,
+   "noise_min_blocks": 10,
+   "noise_ink_max": 0.01,
+   "cm_patch_w": 160,
+   "cm_patch_h": 24,
+   "cm_ncc": 0.99,
+   "cm_min_ink": 0.05,
+   "cm_max_patches": 250,
+   "cm_min_components": 7,
+   "tl_z": 4.0,
+   "severity": {
+    "ela": "low",
+    "noise": "medium",
+    "copy_move": "medium",
+    "text_line": "low"
+   },
+   "max_per_type": 2
+  }
+ },
+ "alerts": {
+  "simulated": true,
+  "tick_minutes": 5.0,
+  "days": 9.0,
+  "ticks": 2593,
+  "alerts": 18,
+  "mean_engine_ms_per_tick": 10.9,
+  "max_engine_ms_per_tick": 62.1,
+  "per_rule": {
+   "AL-CLARIF-OVERDUE": {
+    "alerts": 1,
+    "resolved": 0,
+    "detection_lag": {
+     "n": 1,
+     "mean_min": 0.0,
+     "max_min": 0.0
+    },
+    "escalation_delay": {
+     "n": 0,
+     "mean_min": null,
+     "max_min": null
+    }
+   },
+   "AL-HIGH-OPEN": {
+    "alerts": 11,
+    "resolved": 1,
+    "detection_lag": {
+     "n": 11,
+     "mean_min": 0.0,
+     "max_min": 0.0
+    },
+    "escalation_delay": {
+     "n": 18,
+     "mean_min": 0.0,
+     "max_min": 0.0
+    }
+   },
+   "AL-MEDIUM-OPEN": {
+    "alerts": 5,
+    "resolved": 0,
+    "detection_lag": {
+     "n": 5,
+     "mean_min": 0.0,
+     "max_min": 0.0
+    },
+    "escalation_delay": {
+     "n": 10,
+     "mean_min": 0.0,
+     "max_min": 0.0
+    }
+   },
+   "AL-VERIF-STUCK": {
+    "alerts": 1,
+    "resolved": 0,
+    "detection_lag": {
+     "n": 1,
+     "mean_min": 4.0,
+     "max_min": 4.0
+    },
+    "escalation_delay": {
+     "n": 2,
+     "mean_min": 4.0,
+     "max_min": 4.0
+    }
+   }
+  },
+  "detection_lag_all": {
+   "n": 18,
+   "mean_min": 0.22,
+   "max_min": 4.0
+  },
+  "escalation_delay_all": {
+   "n": 30,
+   "mean_min": 0.27,
+   "max_min": 4.0
+  },
+  "escalations_after_acknowledgement": 0,
+  "duplicate_dedup_keys": 0,
+  "resolution_lag_after_decision": {
+   "n": 1,
+   "mean_min": 0.0,
+   "max_min": 0.0
+  },
+  "within_one_tick": {
+   "detections": 18,
+   "escalations": 30
+  },
+  "notifications": {
+   "email_mock": 49,
+   "in_app": 49
+  },
+  "audit_chain_ok": true
+ },
+ "rbac": {
+  "cases": 55,
+  "passed": 55,
+  "pass_rate": 1.0,
+  "failures": []
+ },
+ "features": {
+  "total": 38,
+  "built": 26,
+  "partial": 0,
+  "mocked": 4,
+  "planned": 7,
+  "downgraded": 1,
+  "not_started": 0
+ },
+ "seconds_total": 769
+}

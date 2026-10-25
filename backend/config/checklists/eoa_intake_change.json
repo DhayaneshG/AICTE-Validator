@@ -1,0 +1,121 @@
+{
+  "id": "eoa_intake_change",
+  "title": "EoA - Intake change",
+  "required_documents": [
+    "affidavit",
+    "affiliation_letter",
+    "previous_eoa_letter"
+  ],
+  "rules": [
+    {
+      "id": "R-MISS-AFFIDAVIT",
+      "doc": "affidavit",
+      "check": "present",
+      "severity": "high",
+      "message": "Required document missing: affidavit."
+    },
+    {
+      "id": "R-MISS-AFFILIATION_LETTER",
+      "doc": "affiliation_letter",
+      "check": "present",
+      "severity": "high",
+      "message": "Required document missing: affiliation letter."
+    },
+    {
+      "id": "R-MISS-PREVIOUS_EOA_LETTER",
+      "doc": "previous_eoa_letter",
+      "check": "present",
+      "severity": "high",
+      "message": "Required document missing: previous eoa letter."
+    },
+    {
+      "id": "R-EXP-AFFILIATION_LETTER",
+      "doc": "affiliation_letter",
+      "check": "not_expired",
+      "severity": "high",
+      "message": "Affiliation Letter is expired as of the application submission date."
+    },
+    {
+      "id": "R-EXP-PREVIOUS_EOA_LETTER",
+      "doc": "previous_eoa_letter",
+      "check": "not_expired",
+      "severity": "high",
+      "message": "Previous Eoa Letter is expired as of the application submission date."
+    },
+    {
+      "id": "R-NAME-CONSIST",
+      "doc": "*",
+      "check": "name_consistent",
+      "severity": "high",
+      "message": "Institution name differs between documents of the same application."
+    },
+    {
+      "id": "R-ID-CONSIST",
+      "doc": "*",
+      "check": "id_consistent",
+      "severity": "high",
+      "message": "Institution/letter identifier differs between documents of the same application."
+    },
+    {
+      "id": "R-REC-NAME",
+      "doc": "*",
+      "check": "matches_records_name",
+      "severity": "medium",
+      "message": "Institution name does not match the (MOCK) AICTE record."
+    },
+    {
+      "id": "R-REC-INTAKE",
+      "doc": [
+        "affidavit",
+        "affiliation_letter",
+        "previous_eoa_letter"
+      ],
+      "check": "matches_records_intake",
+      "severity": "high",
+      "message": "Intake stated in the document differs from the (MOCK) AICTE record."
+    },
+    {
+      "id": "R-VER-AFFILIATION_LETTER",
+      "doc": "affiliation_letter",
+      "check": "issuer_verified",
+      "severity": "high",
+      "message": "QR/reference of affiliation letter could not be verified against the (MOCK) issuer registry."
+    },
+    {
+      "id": "R-META",
+      "doc": "*",
+      "check": "metadata_consistent",
+      "severity": "medium",
+      "message": "PDF creation metadata is inconsistent with the stated issue date."
+    },
+    {
+      "id": "R-DUP",
+      "doc": "*",
+      "check": "not_duplicate",
+      "severity": "high",
+      "message": "Identical file (SHA-256) was submitted in another application."
+    },
+    {
+      "id": "R-SIG",
+      "doc": "*",
+      "check": "signature_valid",
+      "severity": "medium",
+      "message": "Digital signature check did not return valid (advisory)."
+    },
+    {
+      "id": "R-TAMPER",
+      "doc": "*",
+      "check": "no_tamper_indicator",
+      "severity": "medium",
+      "message": "Image-forensic tamper indicator raised (advisory, capped at medium)."
+    },
+    {
+      "id": "R-APH-DSC",
+      "doc": "*",
+      "check": "dsc_present",
+      "severity": "medium",
+      "enabled": false,
+      "message": "Document is not digitally signed (APH 1.4.6: documents uploaded without the Chairman/Secretary's DSC are not valid)."
+    }
+  ]
+}

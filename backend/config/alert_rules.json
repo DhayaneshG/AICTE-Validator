@@ -1,0 +1,16 @@
+{
+  "_comment": "Config-driven alert + escalation rules. 'condition' names a detector in backend/services/alerts.py (CONDITIONS); params, thresholds and recipients are edited here without code changes. Times are hours. An alert becomes due at (condition start + raise_after_hours) and escalates one level each time escalate_after_hours[i] has elapsed since it became due. Levels: scrutiny_officer -> regional_officer -> admin_senior.",
+  "levels": ["scrutiny_officer", "regional_officer", "admin_senior"],
+  "rules": [
+    {"id": "AL-HIGH-OPEN", "title": "High-severity finding awaiting review", "condition": "finding_open",
+     "params": {"severity": ["high"]}, "severity": "high", "raise_after_hours": 0, "escalate_after_hours": [24, 72]},
+    {"id": "AL-MEDIUM-OPEN", "title": "Medium-severity finding unreviewed for 3 days", "condition": "finding_open",
+     "params": {"severity": ["medium"]}, "severity": "medium", "raise_after_hours": 72, "escalate_after_hours": [48, 120]},
+    {"id": "AL-MANUAL-STALE", "title": "Manual-review item not actioned", "condition": "manual_review_stale",
+     "params": {}, "severity": "medium", "raise_after_hours": 48, "escalate_after_hours": [48, 120]},
+    {"id": "AL-VERIF-STUCK", "title": "Issuer verification still unresolved", "condition": "verification_unresolved",
+     "params": {}, "severity": "medium", "raise_after_hours": 24, "escalate_after_hours": [24, 72]},
+    {"id": "AL-CLARIF-OVERDUE", "title": "Clarification not received from the institution", "condition": "clarification_overdue",
+     "params": {}, "severity": "medium", "raise_after_hours": 168, "escalate_after_hours": [72, 168], "notify_institution": true}
+  ]
+}

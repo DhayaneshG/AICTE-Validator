@@ -1,0 +1,30 @@
+{
+  "source": "AICTE Approval Process Handbook (APH) 2024-25 to 2026-27, supplied by the user (231 pages). Cross-checked against this validator on 2026-10-22.",
+  "note": "This is an engineering cross-check by the build team, not legal advice or an official AICTE reading. Coverage reflects what the prototype actually does; 'Not covered' items are planned work.",
+  "items": [
+    {"aph": "Cl. 1.4.3, 1.4.6, 2.3.4(a)", "requirement": "All documents must be digitally signed (DSC) by the Chairman/Secretary; a document uploaded without a DSC is not valid.",
+     "coverage": "partial", "validator": "Signature validation (pyHanko, MOCK trust root) flags invalid / tampered / untrusted / expired signatures (R-SIG). Rule R-APH-DSC flags UNSIGNED documents but ships disabled because the synthetic corpus is mostly unsigned (enable in the checklist JSON)."},
+    {"aph": "Cl. 1.4.4, Annexure-2 (i)", "requirement": "Affidavit 2 on Rs.100 e-stamp paper, sworn before a First Class Judicial Magistrate / Notary / Oath Commissioner, digitally signed.",
+     "coverage": "partial", "validator": "Affidavit is a required document (presence, classification, issue date, duplicate and metadata checks). Stamp value, notary seal and sworn-before details are not extracted."},
+    {"aph": "Annexure-2 (ii)", "requirement": "Copy of the fee payment receipt printed from the AICTE web portal.", "coverage": "not_covered", "validator": "No payment-receipt document type. Planned."},
+    {"aph": "Annexure-2 (iii), Cl. 7.17", "requirement": "Valid Occupancy / Completion Certificate / Building Licence / Form D from the competent authority.", "coverage": "not_covered",
+     "validator": "No document type yet; the expiry / authenticity / verification engine can be reused by adding a type and checklist rule."},
+    {"aph": "Annexure-2 (iv)", "requirement": "Structural Stability Certificate from a registered structural engineer if the building is more than 30 years old.", "coverage": "not_covered", "validator": "Not modelled. Planned."},
+    {"aph": "Annexure-2 (v)", "requirement": "Valid Fire Safety Certificate from the competent authority.", "coverage": "not_covered", "validator": "Not modelled. Planned."},
+    {"aph": "Annexure-2 (vi)", "requirement": "Satellite map showing the land with latitude / longitude at the main building entrance.", "coverage": "not_covered", "validator": "Needs a vision model; planned (infrastructure-evidence capabilities #35-#36)."},
+    {"aph": "Annexure-2 (vii)", "requirement": "Audited statement of accounts of the Trust / Society / Company for the previous year.", "coverage": "not_covered", "validator": "Not modelled. Planned."},
+    {"aph": "Cl. 2.1(e)", "requirement": "No EoA once the live lease equals the longest course duration, unless the lease is extended by a further 30 years.", "coverage": "partial",
+     "validator": "Expired lease is flagged (R-EXP-LEASE, High). Rule R-APH-LEASE-TERM flags a lease with less than 4 years left; it ships disabled (the 4-year default is an assumption for a 4-year degree course)."},
+    {"aph": "Foreword item 7; Cl. 2.x (NOC)", "requirement": "Reduced compliance for land documents and NOC from the affiliating university / State; obtaining the NOC remains the institution's responsibility.", "coverage": "partial",
+     "validator": "The demo checklists still list NOC, lease and affiliation letter as required documents. Checklists are JSON, so they can be aligned to the current APH annexure without code changes."},
+    {"aph": "Cl. 2.1(a)", "requirement": "3-year EoA for institutions meeting criteria such as NBA accreditation (>=30% eligible courses), NAAC >= 3.01, NIRF / QS ranking, autonomy, >80% admissions.", "coverage": "partial",
+     "validator": "Accreditation certificate is a document type with expiry checks. The eligibility thresholds themselves are not evaluated."},
+    {"aph": "Cl. 2.3.4(c), 2.4", "requirement": "Applications are processed strictly on uploaded documents by the Scrutiny / Re-Scrutiny Committee; institutions may submit compliance for deficiencies.", "coverage": "covered",
+     "validator": "Scrutiny queue with evidence, reviewer decisions (accept / override / request clarification) and replacement uploads with version history; decisions are carried over on re-run."},
+    {"aph": "Cl. 2.3.5(b)", "requirement": "Fraudulent documents attract criminal action against the Director / Principal and Chairman / Secretary.", "coverage": "covered",
+     "validator": "Indicators (duplicate file hash, metadata dates, issuer-reference mismatch, signature and image-tamper indicators) are raised as ADVISORY findings for human review; none is treated as proof."},
+    {"aph": "Cl. 1.4.5", "requirement": "Applicant must submit a copy of the application to the State Government / UT and affiliating University and obtain a receipt.", "coverage": "not_covered", "validator": "Offline step; not modelled."},
+    {"aph": "LoA validity (Ch. 1)", "requirement": "A Letter of Approval is valid for two academic years; after that it stands cancelled.", "coverage": "covered", "validator": "Previous EoA / approval letters are checked for expiry against the application submission date (R-EXP-PREVIOUS_EOA_LETTER)."},
+    {"aph": "Cl. 2.3.5(a)", "requirement": "Institutions are selected at random for Expert Visit Committee inspection.", "coverage": "not_covered", "validator": "Inspection recommendation is a planned capability (#37)."}
+  ]
+}

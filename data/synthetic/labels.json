@@ -1,0 +1,4414 @@
+{
+  "seed": 42,
+  "note": "ALL DATA SYNTHETIC. Ground truth for evaluation; MOCK records/registry in backend/mock.",
+  "split_rule": "Fixed 50/50 application-level split (stratified by clean/defective and category). Tune thresholds on dev only; report test.",
+  "defect_types": [
+    "duplicate_file",
+    "expired_accreditation",
+    "expired_lease",
+    "intake_mismatch",
+    "metadata_inconsistent",
+    "missing_document",
+    "name_mismatch",
+    "qr_absent",
+    "qr_wrong_institution"
+  ],
+  "applications": [
+    {
+      "application_id": "APP-0001",
+      "plan_key": "C08",
+      "category": "eoa_renewal_basic",
+      "split": "dev",
+      "label": "clean",
+      "institution_id": "1-55045808051",
+      "institution_name": "Subramaniam Institute of Science and Technology",
+      "region": "SWRO",
+      "submission_date": "2026-03-03",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "978eb3fa440cd1c718d6b2ed79eb62dedfba67bfb770c070a023d0437413e771",
+          "fields": {
+            "institution_name_written": "Subramaniam Institute of Science and Tech.",
+            "institution_name_canonical": "Subramaniam Institute of Science and Technology",
+            "institution_id": "1-55045808051",
+            "issue_date": "2026-01-01",
+            "expiry_date": "2028-12-31",
+            "intake": 300,
+            "proposed_intake": null,
+            "reference_id": "AFL-SWRO-2026-0004104",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2026-01-26"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "lease",
+          "sha256": "0cae84e4b28549758b71bbcb9129dad74a3195c857f2837abe0cc14796541a08",
+          "fields": {
+            "institution_name_written": "Subramaniam Institute of Science and Technology",
+            "institution_name_canonical": "Subramaniam Institute of Science and Technology",
+            "institution_id": null,
+            "issue_date": "2024-12-08",
+            "expiry_date": "2035-12-06",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "serif",
+          "pages": 2,
+          "name_variant": "exact",
+          "creation_date": "2024-12-21"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "noc",
+          "sha256": "7aa55dae56da6b8940a8daf0ddca49ef437b716a859db60a4f12830957e5269f",
+          "fields": {
+            "institution_name_written": "SUBRAMANIAM INSTITUTE OF SCIENCE AND TECHNOLOGY",
+            "institution_name_canonical": "Subramaniam Institute of Science and Technology",
+            "institution_id": "1-55045808051",
+            "issue_date": "2025-01-17",
+            "expiry_date": "2028-01-17",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-SWRO-2025-0004105",
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2025-01-26"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "affidavit",
+          "sha256": "a169e082039fb18bc61ddcc5904bd3586031ccb48be0eb00b7c8b7dbebf5c4d0",
+          "fields": {
+            "institution_name_written": "Subramaniam Inst. of Science & Tech.",
+            "institution_name_canonical": "Subramaniam Institute of Science and Technology",
+            "institution_id": "1-55045808051",
+            "issue_date": "2026-02-27",
+            "expiry_date": null,
+            "intake": 300,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "SWRO/1-55045808051/2025/EOA"
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2026-03-03"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0002",
+      "plan_key": "C17",
+      "category": "eoa_intake_change",
+      "split": "dev",
+      "label": "clean",
+      "institution_id": "1-30995987559",
+      "institution_name": "Ganga Jha Institute of Technology",
+      "region": "ERO",
+      "submission_date": "2026-03-01",
+      "required_documents": [
+        "affidavit",
+        "affiliation_letter",
+        "previous_eoa_letter"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "previous_eoa_letter",
+          "sha256": "2a2a035ebd6638a1c0b188ea06411f6de11e08c1be1385a88f42af4afb25a1e9",
+          "fields": {
+            "institution_name_written": "GANGA JHA INSTITUTE OF TECHNOLOGY",
+            "institution_name_canonical": "Ganga Jha Institute of Technology",
+            "institution_id": "1-30995987559",
+            "issue_date": "2025-04-15",
+            "expiry_date": "2026-06-30",
+            "intake": 240,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "ERO/1-30995987559/2025/EOA"
+          },
+          "layout": "L4",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2025-04-19"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "affidavit",
+          "sha256": "beea09739b97f062ad0e95ab16c176bfc63f2f761232fbd96d059afebd2bbf02",
+          "fields": {
+            "institution_name_written": "Ganga Jha Institute of Technology (Autonomous)",
+            "institution_name_canonical": "Ganga Jha Institute of Technology",
+            "institution_id": "1-30995987559",
+            "issue_date": "2026-02-12",
+            "expiry_date": null,
+            "intake": 240,
+            "proposed_intake": 360,
+            "reference_id": null,
+            "letter_id": "ERO/1-30995987559/2025/EOA"
+          },
+          "layout": "L2",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "autonomous",
+          "creation_date": "2026-02-26"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "c7a0e191e86b9edb85f6bd2eb886d45833acedcffec8e86ab9ac0262ef005e01",
+          "fields": {
+            "institution_name_written": "Ganga Jha Institute of Technology (Autonomous)",
+            "institution_name_canonical": "Ganga Jha Institute of Technology",
+            "institution_id": "1-30995987559",
+            "issue_date": "2025-02-02",
+            "expiry_date": "2028-02-02",
+            "intake": 240,
+            "proposed_intake": null,
+            "reference_id": "AFL-ERO-2025-0004113",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "autonomous",
+          "creation_date": "2025-02-14"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0003",
+      "plan_key": "D19",
+      "category": "eoa_intake_change",
+      "split": "test",
+      "label": "defective",
+      "institution_id": "1-33576300456",
+      "institution_name": "Netaji Virk Institute of Science and Technology",
+      "region": "CRO",
+      "submission_date": "2026-03-21",
+      "required_documents": [
+        "affidavit",
+        "affiliation_letter",
+        "previous_eoa_letter"
+      ],
+      "defects": [
+        {
+          "defect_type": "metadata_inconsistent",
+          "doc_type": "previous_eoa_letter",
+          "detail": {
+            "kind": "created_long_after_issue",
+            "offset_days": 126,
+            "stated_issue_date": "2025-04-27",
+            "pdf_creation_date": "2025-08-31"
+          }
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affidavit",
+          "sha256": "8a22c5c25b02e97bf36c7529eaf9ab8695a8bbe0d717fb0e2c59f2f42e02f034",
+          "fields": {
+            "institution_name_written": "Netaji Virk Institute of Science and Technology (Autonomous)",
+            "institution_name_canonical": "Netaji Virk Institute of Science and Technology",
+            "institution_id": "1-33576300456",
+            "issue_date": "2026-02-24",
+            "expiry_date": null,
+            "intake": 60,
+            "proposed_intake": 180,
+            "reference_id": null,
+            "letter_id": "CRO/1-33576300456/2025/EOA"
+          },
+          "layout": "L4",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "autonomous",
+          "creation_date": "2026-02-24"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "previous_eoa_letter",
+          "sha256": "de35788d11c25c693afbaf5f3b15c9b6ba0591a1361269dca3f7da2e1d00bcf9",
+          "fields": {
+            "institution_name_written": "Netaji Virk Inst. of Science & Tech.",
+            "institution_name_canonical": "Netaji Virk Institute of Science and Technology",
+            "institution_id": "1-33576300456",
+            "issue_date": "2025-04-27",
+            "expiry_date": "2026-06-30",
+            "intake": 60,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "CRO/1-33576300456/2025/EOA"
+          },
+          "layout": "L4",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2025-08-31"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "73ea841e3925cf147a95b87983a372be973f7fdbfe2bfa68bc4a1b6ac1aa32e7",
+          "fields": {
+            "institution_name_written": "Netaji Virk Institute of Science and Technology, Indore",
+            "institution_name_canonical": "Netaji Virk Institute of Science and Technology",
+            "institution_id": "1-33576300456",
+            "issue_date": "2025-09-02",
+            "expiry_date": "2028-09-01",
+            "intake": 60,
+            "proposed_intake": null,
+            "reference_id": "AFL-CRO-2025-0004114",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2025-09-05"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0004",
+      "plan_key": "D09",
+      "category": "eoa_renewal_basic",
+      "split": "dev",
+      "label": "defective",
+      "institution_id": "1-99247496268",
+      "institution_name": "Doctor School of Engineering and Technology",
+      "region": "CRO",
+      "submission_date": "2026-02-18",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter"
+      ],
+      "defects": [
+        {
+          "defect_type": "name_mismatch",
+          "doc_type": "affidavit",
+          "detail": {
+            "written": "Doctor College of Arts and Science",
+            "canonical": "Doctor School of Engineering and Technology",
+            "kind": "mismatch_swapped_type"
+          }
+        },
+        {
+          "defect_type": "qr_absent",
+          "doc_type": "affiliation_letter",
+          "detail": {
+            "reference_id": "AFL-CRO-2025-0004121"
+          }
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affidavit",
+          "sha256": "9e603e3c282eb5fa9451818e3b42aad76c6cfbfc933f10686fedd7dbf6f6257d",
+          "fields": {
+            "institution_name_written": "Doctor College of Arts and Science",
+            "institution_name_canonical": "Doctor School of Engineering and Technology",
+            "institution_id": "1-99247496268",
+            "issue_date": "2026-02-01",
+            "expiry_date": null,
+            "intake": 60,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "CRO/1-99247496268/2025/EOA"
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "mismatch_swapped_type",
+          "creation_date": "2026-02-26"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "286d621443b77351a12fc17a2ea0ab48b79fbab228112bc841890ce7b14df47a",
+          "fields": {
+            "institution_name_written": "DOCTOR SCHOOL OF ENGINEERING AND TECHNOLOGY",
+            "institution_name_canonical": "Doctor School of Engineering and Technology",
+            "institution_id": "1-99247496268",
+            "issue_date": "2025-04-02",
+            "expiry_date": "2028-04-01",
+            "intake": 60,
+            "proposed_intake": null,
+            "reference_id": "AFL-CRO-2025-0004121",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2025-04-20"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "lease",
+          "sha256": "dff9b14e1e77022475e31c13ddf9dc528b428471503d774715319bad2adcf1e7",
+          "fields": {
+            "institution_name_written": "Doctor School of Engineering and Technology",
+            "institution_name_canonical": "Doctor School of Engineering and Technology",
+            "institution_id": null,
+            "issue_date": "2022-03-28",
+            "expiry_date": "2033-03-25",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "mono",
+          "pages": 2,
+          "name_variant": "exact",
+          "creation_date": "2022-03-31"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "noc",
+          "sha256": "708d503ad51837fc0164dc144be0a421403608799f17be7c59725753f1f4bb53",
+          "fields": {
+            "institution_name_written": "Doctor School of Engineering and Technology, Indore",
+            "institution_name_canonical": "Doctor School of Engineering and Technology",
+            "institution_id": "1-99247496268",
+            "issue_date": "2024-05-05",
+            "expiry_date": "2027-05-05",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-CRO-2024-0004126",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2024-05-20"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0005",
+      "plan_key": "D16",
+      "category": "eoa_intake_change",
+      "split": "dev",
+      "label": "defective",
+      "institution_id": "1-91785202027",
+      "institution_name": "Heritage Desai School of Engineering and Technology",
+      "region": "WRO",
+      "submission_date": "2026-02-16",
+      "required_documents": [
+        "affidavit",
+        "affiliation_letter",
+        "previous_eoa_letter"
+      ],
+      "defects": [
+        {
+          "defect_type": "metadata_inconsistent",
+          "doc_type": "affidavit",
+          "detail": {
+            "kind": "created_long_after_issue",
+            "offset_days": 279,
+            "stated_issue_date": "2026-02-08",
+            "pdf_creation_date": "2026-11-14"
+          }
+        },
+        {
+          "defect_type": "qr_wrong_institution",
+          "doc_type": "affiliation_letter",
+          "detail": {
+            "reference_id": "AFL-WRO-2025-0004132",
+            "registry_institution_id": "1-75699781599"
+          }
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affidavit",
+          "sha256": "be8e468368966c6d3e714aa5f82d8dad1e545abc9f4894a89313712b946a766e",
+          "fields": {
+            "institution_name_written": "Heritage Desai School of Engg. and Technology",
+            "institution_name_canonical": "Heritage Desai School of Engineering and Technology",
+            "institution_id": "1-91785202027",
+            "issue_date": "2026-02-08",
+            "expiry_date": null,
+            "intake": 60,
+            "proposed_intake": 120,
+            "reference_id": null,
+            "letter_id": "WRO/1-91785202027/2025/EOA"
+          },
+          "layout": "L2",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2026-11-14"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "9bf8b12e6d4a08b46de4ffb6103f554b34afc79561904f2b757320648ca9fa0b",
+          "fields": {
+            "institution_name_written": "Heritage Desai School of Engineering and Technology, Nagpur",
+            "institution_name_canonical": "Heritage Desai School of Engineering and Technology",
+            "institution_id": "1-91785202027",
+            "issue_date": "2025-04-27",
+            "expiry_date": "2028-04-26",
+            "intake": 60,
+            "proposed_intake": null,
+            "reference_id": "AFL-WRO-2025-0004132",
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2025-04-30"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "previous_eoa_letter",
+          "sha256": "37d334dad7c9c2aef867b35e02a87e0b2da947d394e6ae801fe1dd00d42b0770",
+          "fields": {
+            "institution_name_written": "HERITAGE DESAI SCHOOL OF ENGINEERING AND TECHNOLOGY",
+            "institution_name_canonical": "Heritage Desai School of Engineering and Technology",
+            "institution_id": "1-91785202027",
+            "issue_date": "2025-03-19",
+            "expiry_date": "2026-06-30",
+            "intake": 60,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "WRO/1-91785202027/2025/EOA"
+          },
+          "layout": "L2",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2025-04-14"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0006",
+      "plan_key": "C09",
+      "category": "eoa_renewal_basic",
+      "split": "dev",
+      "label": "clean",
+      "institution_id": "1-93055865312",
+      "institution_name": "Dhar School of Engineering and Technology",
+      "region": "WRO",
+      "submission_date": "2026-03-07",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "98ba8ed9d3e94b48dddb1db320110318e23df626c2a81f94f2ffad0877d8be87",
+          "fields": {
+            "institution_name_written": "M/s Dhar School of Engineering and Technology",
+            "institution_name_canonical": "Dhar School of Engineering and Technology",
+            "institution_id": "1-93055865312",
+            "issue_date": "2025-02-12",
+            "expiry_date": "2028-02-12",
+            "intake": 300,
+            "proposed_intake": null,
+            "reference_id": "AFL-WRO-2025-0004134",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2025-03-13"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "affidavit",
+          "sha256": "d4f01db61b7acb82e77a7e06b78744c91a2a1ae1754d47db6b57bfe247aa68f9",
+          "fields": {
+            "institution_name_written": "DHAR SCHOOL OF ENGINEERING AND TECHNOLOGY",
+            "institution_name_canonical": "Dhar School of Engineering and Technology",
+            "institution_id": "1-93055865312",
+            "issue_date": "2026-02-27",
+            "expiry_date": null,
+            "intake": 300,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "WRO/1-93055865312/2025/EOA"
+          },
+          "layout": "L2",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2026-03-14"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "lease",
+          "sha256": "bf49d20be8aa9625e682fd97b5c2e410bf78428e94cd0e56cc74de9ab0819ba9",
+          "fields": {
+            "institution_name_written": "Dhar School of Engineering and Technology (Autonomous)",
+            "institution_name_canonical": "Dhar School of Engineering and Technology",
+            "institution_id": null,
+            "issue_date": "2025-05-16",
+            "expiry_date": "2036-05-13",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "sans",
+          "pages": 2,
+          "name_variant": "autonomous",
+          "creation_date": "2025-06-10"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "noc",
+          "sha256": "cb6d90a2d061d7b6a05af33c9644c3c0b30803466e43aa16995408658478fce6",
+          "fields": {
+            "institution_name_written": "Dhar School of Engineering and Technology (Autonomous)",
+            "institution_name_canonical": "Dhar School of Engineering and Technology",
+            "institution_id": "1-93055865312",
+            "issue_date": "2025-03-12",
+            "expiry_date": "2028-03-11",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-WRO-2025-0004139",
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "autonomous",
+          "creation_date": "2025-03-23"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0007",
+      "plan_key": "D14",
+      "category": "eoa_intake_change",
+      "split": "dev",
+      "label": "defective",
+      "institution_id": "1-38387700990",
+      "institution_name": "Pioneer Bhatt Engineering College",
+      "region": "SWRO",
+      "submission_date": "2026-02-22",
+      "required_documents": [
+        "affidavit",
+        "affiliation_letter",
+        "previous_eoa_letter"
+      ],
+      "defects": [
+        {
+          "defect_type": "intake_mismatch",
+          "doc_type": "previous_eoa_letter",
+          "detail": {
+            "document_intake": 420,
+            "records_intake": 300
+          }
+        },
+        {
+          "defect_type": "name_mismatch",
+          "doc_type": "affiliation_letter",
+          "detail": {
+            "written": "Shri Munshi Institute of Science and Technology",
+            "canonical": "Pioneer Bhatt Engineering College",
+            "kind": "mismatch_other_institution"
+          }
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "previous_eoa_letter",
+          "sha256": "ce70fb94e204a2ea1bbcb3da73474060bde1dd02c3fc48de969d4ffd9156cf69",
+          "fields": {
+            "institution_name_written": "Pioneer Bhatt Engineering College",
+            "institution_name_canonical": "Pioneer Bhatt Engineering College",
+            "institution_id": "1-38387700990",
+            "issue_date": "2025-04-11",
+            "expiry_date": "2026-06-30",
+            "intake": 420,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "SWRO/1-38387700990/2025/EOA"
+          },
+          "layout": "L1",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2025-04-29"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "42d80fa85b39254038831375f5fec5c56b966ccc55e939390fcb6fedcd2d2db5",
+          "fields": {
+            "institution_name_written": "Shri Munshi Institute of Science and Technology",
+            "institution_name_canonical": "Pioneer Bhatt Engineering College",
+            "institution_id": "1-38387700990",
+            "issue_date": "2024-11-17",
+            "expiry_date": "2027-11-17",
+            "intake": 300,
+            "proposed_intake": null,
+            "reference_id": "AFL-SWRO-2024-0004140",
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "mismatch_other_institution",
+          "creation_date": "2024-11-29"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affidavit",
+          "sha256": "e1c4fd83cb5cf22e96316fa5531274f9c5319eedab5315f7dc56573129ecc892",
+          "fields": {
+            "institution_name_written": "Pioneer Bhatt Engineering College",
+            "institution_name_canonical": "Pioneer Bhatt Engineering College",
+            "institution_id": "1-38387700990",
+            "issue_date": "2026-02-18",
+            "expiry_date": null,
+            "intake": 300,
+            "proposed_intake": 360,
+            "reference_id": null,
+            "letter_id": "SWRO/1-38387700990/2025/EOA"
+          },
+          "layout": "L1",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2026-02-19"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0008",
+      "plan_key": "D10",
+      "category": "eoa_renewal_basic",
+      "split": "test",
+      "label": "defective",
+      "institution_id": "1-23020154291",
+      "institution_name": "Shri Munshi Institute of Science and Technology",
+      "region": "SWRO",
+      "submission_date": "2026-02-22",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter"
+      ],
+      "defects": [
+        {
+          "defect_type": "metadata_inconsistent",
+          "doc_type": "noc",
+          "detail": {
+            "kind": "created_before_issue",
+            "offset_days": -267,
+            "stated_issue_date": "2025-01-22",
+            "pdf_creation_date": "2024-04-30"
+          }
+        },
+        {
+          "defect_type": "intake_mismatch",
+          "doc_type": "affiliation_letter",
+          "detail": {
+            "document_intake": 480,
+            "records_intake": 360
+          }
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "lease",
+          "sha256": "fe3a3a8fad3e12944c178b487eefaf874b0cf4e74083e89ae6ffe9d836506da8",
+          "fields": {
+            "institution_name_written": "Shri Munshi Institute of Science and Technology, Mysuru",
+            "institution_name_canonical": "Shri Munshi Institute of Science and Technology",
+            "institution_id": null,
+            "issue_date": "2024-04-30",
+            "expiry_date": "2035-04-28",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 2,
+          "name_variant": "city_suffix",
+          "creation_date": "2024-05-14"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "noc",
+          "sha256": "3727daa566515d3c1538cbd9f67f630f6fd02370ce0e99a8f52d720dfe8848e3",
+          "fields": {
+            "institution_name_written": "Shri Munshi Institute of Science and Technology",
+            "institution_name_canonical": "Shri Munshi Institute of Science and Technology",
+            "institution_id": "1-23020154291",
+            "issue_date": "2025-01-22",
+            "expiry_date": "2028-01-22",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-SWRO-2025-0004143",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "exact",
+          "creation_date": "2024-04-30"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affidavit",
+          "sha256": "9e523bba1f931669a5ad9e661a45e3bbcb5a82dff9a7673d36aaf0fa95116274",
+          "fields": {
+            "institution_name_written": "M/s Shri Munshi Institute of Science and Technology",
+            "institution_name_canonical": "Shri Munshi Institute of Science and Technology",
+            "institution_id": "1-23020154291",
+            "issue_date": "2026-02-18",
+            "expiry_date": null,
+            "intake": 360,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "SWRO/1-23020154291/2025/EOA"
+          },
+          "layout": "L4",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2026-03-07"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "4fab44a66e1bc655023655e578d56a74550f68d313eb7cd3e0a46475cb461123",
+          "fields": {
+            "institution_name_written": "SHRI MUNSHI INSTITUTE OF SCIENCE AND TECHNOLOGY",
+            "institution_name_canonical": "Shri Munshi Institute of Science and Technology",
+            "institution_id": "1-23020154291",
+            "issue_date": "2025-01-31",
+            "expiry_date": "2028-01-31",
+            "intake": 480,
+            "proposed_intake": null,
+            "reference_id": "AFL-SWRO-2025-0004148",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2025-02-06"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0009",
+      "plan_key": "D17",
+      "category": "eoa_intake_change",
+      "split": "test",
+      "label": "defective",
+      "institution_id": "1-70346771098",
+      "institution_name": "Kapur Institute of Technology",
+      "region": "ERO",
+      "submission_date": "2026-02-22",
+      "required_documents": [
+        "affidavit",
+        "affiliation_letter",
+        "previous_eoa_letter"
+      ],
+      "defects": [
+        {
+          "defect_type": "name_mismatch",
+          "doc_type": "previous_eoa_letter",
+          "detail": {
+            "written": "Heritage Boase Institute of Technology",
+            "canonical": "Kapur Institute of Technology",
+            "kind": "mismatch_other_institution"
+          }
+        },
+        {
+          "defect_type": "missing_document",
+          "doc_type": "affiliation_letter",
+          "detail": {}
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affidavit",
+          "sha256": "4fc9705d0d9d04e0b19b252eee05c1b787c731013228ef95af854808cec4de68",
+          "fields": {
+            "institution_name_written": "Kapur Institute of Technology, Kolkata",
+            "institution_name_canonical": "Kapur Institute of Technology",
+            "institution_id": "1-70346771098",
+            "issue_date": "2026-01-30",
+            "expiry_date": null,
+            "intake": 300,
+            "proposed_intake": 360,
+            "reference_id": null,
+            "letter_id": "ERO/1-70346771098/2025/EOA"
+          },
+          "layout": "L1",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2026-02-28"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "previous_eoa_letter",
+          "sha256": "038159f9ce7cb72b34fc7154b3200b937c497df8440e6556e9cd8c524197525b",
+          "fields": {
+            "institution_name_written": "Heritage Boase Institute of Technology",
+            "institution_name_canonical": "Kapur Institute of Technology",
+            "institution_id": "1-70346771098",
+            "issue_date": "2025-06-22",
+            "expiry_date": "2026-06-30",
+            "intake": 300,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "ERO/1-70346771098/2025/EOA"
+          },
+          "layout": "L2",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "mismatch_other_institution",
+          "creation_date": "2025-07-17"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0010",
+      "plan_key": "C16",
+      "category": "eoa_intake_change",
+      "split": "dev",
+      "label": "clean",
+      "institution_id": "1-25007255813",
+      "institution_name": "Suri Institute of Engineering and Technology",
+      "region": "NRO",
+      "submission_date": "2026-03-03",
+      "required_documents": [
+        "affidavit",
+        "affiliation_letter",
+        "previous_eoa_letter"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "previous_eoa_letter",
+          "sha256": "12c85465ce2937b98a594e714e6da7a8c68b15aa07240f284bba75fa46c823b0",
+          "fields": {
+            "institution_name_written": "M/s Suri Institute of Engineering and Technology",
+            "institution_name_canonical": "Suri Institute of Engineering and Technology",
+            "institution_id": "1-25007255813",
+            "issue_date": "2025-04-07",
+            "expiry_date": "2026-06-30",
+            "intake": 120,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "NRO/1-25007255813/2025/EOA"
+          },
+          "layout": "L2",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2025-04-19"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "affidavit",
+          "sha256": "d93ac5abf16b50b115fb6d71ca93d06d76dc2db75a85f68b76618ba4405d2fd9",
+          "fields": {
+            "institution_name_written": "Suri Institute of Engineering and Technology",
+            "institution_name_canonical": "Suri Institute of Engineering and Technology",
+            "institution_id": "1-25007255813",
+            "issue_date": "2026-02-10",
+            "expiry_date": null,
+            "intake": 120,
+            "proposed_intake": 240,
+            "reference_id": null,
+            "letter_id": "NRO/1-25007255813/2025/EOA"
+          },
+          "layout": "L4",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "exact",
+          "creation_date": "2026-02-10"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "677c916d8115b4058c80b50379c0394687db7ec7a920e4c35262b491362b0c22",
+          "fields": {
+            "institution_name_written": "Suri Institute of Engineering & Technology",
+            "institution_name_canonical": "Suri Institute of Engineering and Technology",
+            "institution_id": "1-25007255813",
+            "issue_date": "2024-12-30",
+            "expiry_date": "2027-12-30",
+            "intake": 120,
+            "proposed_intake": null,
+            "reference_id": "AFL-NRO-2024-0004151",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2025-01-17"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0011",
+      "plan_key": "C15",
+      "category": "eoa_intake_change",
+      "split": "dev",
+      "label": "clean",
+      "institution_id": "1-37976843575",
+      "institution_name": "Saraswathi Rama Institute of Technology",
+      "region": "WRO",
+      "submission_date": "2026-02-26",
+      "required_documents": [
+        "affidavit",
+        "affiliation_letter",
+        "previous_eoa_letter"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "previous_eoa_letter",
+          "sha256": "1e57da5aaecf94e94809d1050c2cd6690d31930b1c2a5ce8704cf76a7188dc23",
+          "fields": {
+            "institution_name_written": "Saraswathi Rama Institute of Technology, Pune",
+            "institution_name_canonical": "Saraswathi Rama Institute of Technology",
+            "institution_id": "1-37976843575",
+            "issue_date": "2025-04-25",
+            "expiry_date": "2026-06-30",
+            "intake": 360,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "WRO/1-37976843575/2025/EOA"
+          },
+          "layout": "L2",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2025-05-20"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "667d291b2cf9bdf562759ef1c14bb9d5584e89d76a8b8be6de09adab5d39e361",
+          "fields": {
+            "institution_name_written": "M/s Saraswathi Rama Institute of Technology",
+            "institution_name_canonical": "Saraswathi Rama Institute of Technology",
+            "institution_id": "1-37976843575",
+            "issue_date": "2025-01-05",
+            "expiry_date": "2028-01-05",
+            "intake": 360,
+            "proposed_intake": null,
+            "reference_id": "AFL-WRO-2025-0004155",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2025-01-08"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affidavit",
+          "sha256": "529a61d3375fae3e291d12f2e62cb82c3d077cfdac7925f4ff7246d4ba6bad77",
+          "fields": {
+            "institution_name_written": "Saraswathi Rama Institute of Technology, Pune",
+            "institution_name_canonical": "Saraswathi Rama Institute of Technology",
+            "institution_id": "1-37976843575",
+            "issue_date": "2026-02-06",
+            "expiry_date": null,
+            "intake": 360,
+            "proposed_intake": 420,
+            "reference_id": null,
+            "letter_id": "WRO/1-37976843575/2025/EOA"
+          },
+          "layout": "L3",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2026-02-15"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0012",
+      "plan_key": "D13",
+      "category": "eoa_renewal_basic",
+      "split": "test",
+      "label": "defective",
+      "institution_id": "1-25634709501",
+      "institution_name": "Sri Chakraborty School of Engineering and Technology",
+      "region": "WRO",
+      "submission_date": "2026-02-25",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter"
+      ],
+      "defects": [
+        {
+          "defect_type": "expired_lease",
+          "doc_type": "lease",
+          "detail": {
+            "expiry_date": "2026-02-05",
+            "submission_date": "2026-02-25"
+          }
+        },
+        {
+          "defect_type": "missing_document",
+          "doc_type": "affidavit",
+          "detail": {}
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "3f695778c35e288c1efa36afe9a0618fb770bc1be28569dc307b475fd1158003",
+          "fields": {
+            "institution_name_written": "Sri Chakraborty School of Engineering and Technology, Nagpur",
+            "institution_name_canonical": "Sri Chakraborty School of Engineering and Technology",
+            "institution_id": "1-25634709501",
+            "issue_date": "2025-09-07",
+            "expiry_date": "2028-09-06",
+            "intake": 240,
+            "proposed_intake": null,
+            "reference_id": "AFL-WRO-2025-0004157",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2025-10-06"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "noc",
+          "sha256": "79dec9c474ffa45b92e6b56b165663eb13cc3bec7b702ffb9fbe8e6f5733bb00",
+          "fields": {
+            "institution_name_written": "Sri Chakraborty School of Engineering and Technology",
+            "institution_name_canonical": "Sri Chakraborty School of Engineering and Technology",
+            "institution_id": "1-25634709501",
+            "issue_date": "2025-07-27",
+            "expiry_date": "2028-07-26",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-WRO-2025-0004163",
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "exact",
+          "creation_date": "2025-08-13"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "lease",
+          "sha256": "8c8cfe6ef3bfe0e2e7421bbd856d1104b9b3b5126b4be23f56d2553d2d8c4084",
+          "fields": {
+            "institution_name_written": "Sri Chakraborty School of Engineering and Technology (Autonomous)",
+            "institution_name_canonical": "Sri Chakraborty School of Engineering and Technology",
+            "institution_id": null,
+            "issue_date": "2015-02-08",
+            "expiry_date": "2026-02-05",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "mono",
+          "pages": 2,
+          "name_variant": "autonomous",
+          "creation_date": "2015-02-19"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0013",
+      "plan_key": "C12",
+      "category": "eoa_renewal_basic",
+      "split": "test",
+      "label": "clean",
+      "institution_id": "1-37434064274",
+      "institution_name": "Saraswathi Pau School of Engineering and Technology",
+      "region": "CRO",
+      "submission_date": "2026-02-20",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affidavit",
+          "sha256": "5135911f4ca365fe79c26f89a37a1fa2f5c17bb3101ef659cb90f6102c36cb9a",
+          "fields": {
+            "institution_name_written": "Saraswathi Pau School of Engineering and Technology (Autonomous)",
+            "institution_name_canonical": "Saraswathi Pau School of Engineering and Technology",
+            "institution_id": "1-37434064274",
+            "issue_date": "2026-02-09",
+            "expiry_date": null,
+            "intake": 300,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "CRO/1-37434064274/2025/EOA"
+          },
+          "layout": "L4",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "autonomous",
+          "creation_date": "2026-02-22"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "noc",
+          "sha256": "16153b84387f9ef7efd613e29bd35939c39a9131dafe3a37c62163cdb7cb678f",
+          "fields": {
+            "institution_name_written": "SARASWATHI PAU SCHOOL OF ENGINEERING AND TECHNOLOGY",
+            "institution_name_canonical": "Saraswathi Pau School of Engineering and Technology",
+            "institution_id": "1-37434064274",
+            "issue_date": "2025-11-29",
+            "expiry_date": "2028-11-28",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-CRO-2025-0004169",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2025-12-06"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "lease",
+          "sha256": "600c7482b880cdab4ace910729b6c8a79e4d7fbe50bc0b033d1c60fbde6c0664",
+          "fields": {
+            "institution_name_written": "Saraswathi Pau School of Engineering and Technology (Autonomous)",
+            "institution_name_canonical": "Saraswathi Pau School of Engineering and Technology",
+            "institution_id": null,
+            "issue_date": "2023-05-03",
+            "expiry_date": "2034-04-30",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "sans",
+          "pages": 2,
+          "name_variant": "autonomous",
+          "creation_date": "2023-05-22"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "81b7a7792f42d4cfce32260691060645f107927974c6dc34950fc372cc4f05e9",
+          "fields": {
+            "institution_name_written": "M/s Saraswathi Pau School of Engineering and Technology",
+            "institution_name_canonical": "Saraswathi Pau School of Engineering and Technology",
+            "institution_id": "1-37434064274",
+            "issue_date": "2025-03-29",
+            "expiry_date": "2028-03-28",
+            "intake": 300,
+            "proposed_intake": null,
+            "reference_id": "AFL-CRO-2025-0004175",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2025-03-29"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0014",
+      "plan_key": "D11",
+      "category": "eoa_renewal_basic",
+      "split": "dev",
+      "label": "defective",
+      "institution_id": "1-64103440481",
+      "institution_name": "Netaji Oak Institute of Science and Technology",
+      "region": "SRO",
+      "submission_date": "2026-02-05",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter"
+      ],
+      "defects": [
+        {
+          "defect_type": "missing_document",
+          "doc_type": "affidavit",
+          "detail": {}
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "noc",
+          "sha256": "ecae15f491f0648e349f1f29d4f78d9862473bb06bc04f11b313d13b826d9228",
+          "fields": {
+            "institution_name_written": "Netaji Oak Institute of Science & Technology",
+            "institution_name_canonical": "Netaji Oak Institute of Science and Technology",
+            "institution_id": "1-64103440481",
+            "issue_date": "2025-08-18",
+            "expiry_date": "2028-08-17",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-SRO-2025-0004178",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2025-09-10"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "lease",
+          "sha256": "255e6aeead1eb3ad8779f72e1d13b7bf4a1fbca48dc43b7c7f9f7bec3af68574",
+          "fields": {
+            "institution_name_written": "NETAJI OAK INSTITUTE OF SCIENCE AND TECHNOLOGY",
+            "institution_name_canonical": "Netaji Oak Institute of Science and Technology",
+            "institution_id": null,
+            "issue_date": "2025-07-01",
+            "expiry_date": "2036-06-28",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "sans",
+          "pages": 2,
+          "name_variant": "upper",
+          "creation_date": "2025-07-02"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "8b44b8726503fde9dc574c481c25c341fa2f126bd571592c9bd493bbe685d7a6",
+          "fields": {
+            "institution_name_written": "NETAJI OAK INSTITUTE OF SCIENCE AND TECHNOLOGY",
+            "institution_name_canonical": "Netaji Oak Institute of Science and Technology",
+            "institution_id": "1-64103440481",
+            "issue_date": "2025-02-10",
+            "expiry_date": "2028-02-10",
+            "intake": 300,
+            "proposed_intake": null,
+            "reference_id": "AFL-SRO-2025-0004181",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2025-02-16"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0015",
+      "plan_key": "D15",
+      "category": "eoa_intake_change",
+      "split": "test",
+      "label": "defective",
+      "institution_id": "1-72444164009",
+      "institution_name": "Lakshmi Loke School of Engineering and Technology",
+      "region": "NRO",
+      "submission_date": "2026-02-08",
+      "required_documents": [
+        "affidavit",
+        "affiliation_letter",
+        "previous_eoa_letter"
+      ],
+      "defects": [
+        {
+          "defect_type": "qr_absent",
+          "doc_type": "affiliation_letter",
+          "detail": {
+            "reference_id": "AFL-NRO-2025-0004186"
+          }
+        },
+        {
+          "defect_type": "intake_mismatch",
+          "doc_type": "affidavit",
+          "detail": {
+            "document_intake": 300,
+            "records_intake": 180
+          }
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "434eb39a65951cb34740606054ebad33129e3b389951aa4f0ef7c17fbb637470",
+          "fields": {
+            "institution_name_written": "M/s Lakshmi Loke School of Engineering and Technology",
+            "institution_name_canonical": "Lakshmi Loke School of Engineering and Technology",
+            "institution_id": "1-72444164009",
+            "issue_date": "2025-02-07",
+            "expiry_date": "2028-02-07",
+            "intake": 180,
+            "proposed_intake": null,
+            "reference_id": "AFL-NRO-2025-0004186",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2025-02-20"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "previous_eoa_letter",
+          "sha256": "2388cc4d3452a0c74c20541c9a306b7b13e3c86aee69cf8def780ef170a70faf",
+          "fields": {
+            "institution_name_written": "Lakshmi Loke School of Engg. & Tech.",
+            "institution_name_canonical": "Lakshmi Loke School of Engineering and Technology",
+            "institution_id": "1-72444164009",
+            "issue_date": "2025-05-06",
+            "expiry_date": "2026-06-30",
+            "intake": 180,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "NRO/1-72444164009/2025/EOA"
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2025-05-11"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affidavit",
+          "sha256": "df5f2dcffad1d0fd7822eda87c15dab4b1897ebb128220e6cb2f1befe0995255",
+          "fields": {
+            "institution_name_written": "Lakshmi Loke School of Engineering & Technology",
+            "institution_name_canonical": "Lakshmi Loke School of Engineering and Technology",
+            "institution_id": "1-72444164009",
+            "issue_date": "2026-01-27",
+            "expiry_date": null,
+            "intake": 300,
+            "proposed_intake": 300,
+            "reference_id": null,
+            "letter_id": "NRO/1-72444164009/2025/EOA"
+          },
+          "layout": "L4",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2026-01-30"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0016",
+      "plan_key": "C04",
+      "category": "eoa_new_course",
+      "split": "test",
+      "label": "clean",
+      "institution_id": "1-29848485517",
+      "institution_name": "Sri Chopra College of Engineering",
+      "region": "NRO",
+      "submission_date": "2026-03-24",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter",
+        "accreditation_certificate"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affidavit",
+          "sha256": "5394fc17c3e837ffdcaf7743bdad88b106f685223335d7436f62feb4a02e2b99",
+          "fields": {
+            "institution_name_written": "M/s Sri Chopra College of Engineering",
+            "institution_name_canonical": "Sri Chopra College of Engineering",
+            "institution_id": "1-29848485517",
+            "issue_date": "2026-03-13",
+            "expiry_date": null,
+            "intake": 120,
+            "proposed_intake": 60,
+            "reference_id": null,
+            "letter_id": "NRO/1-29848485517/2025/EOA"
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2026-03-18"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "accreditation_certificate",
+          "sha256": "7512fcc8fa1abc8149db611b0d3b789e51e2de9990ed67a2ed25ecd940c32d12",
+          "fields": {
+            "institution_name_written": "Sri Chopra College of Engineering",
+            "institution_name_canonical": "Sri Chopra College of Engineering",
+            "institution_id": "1-29848485517",
+            "issue_date": "2023-11-15",
+            "expiry_date": "2026-11-14",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2023-11-22"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "noc",
+          "sha256": "44e078faa408d4692405b5a527d51d7337e26e2258d3e14d7090d89c3fe9eadd",
+          "fields": {
+            "institution_name_written": "Sri Chopra College of Engineering",
+            "institution_name_canonical": "Sri Chopra College of Engineering",
+            "institution_id": "1-29848485517",
+            "issue_date": "2024-12-27",
+            "expiry_date": "2027-12-27",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-NRO-2024-0004188",
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "exact",
+          "creation_date": "2025-01-18"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "lease",
+          "sha256": "efe8fc90ae764bd58eb1431b268d6de51e85266abb6d6b4579cb320984c6183d",
+          "fields": {
+            "institution_name_written": "Sri Chopra College of Engineering",
+            "institution_name_canonical": "Sri Chopra College of Engineering",
+            "institution_id": null,
+            "issue_date": "2024-05-12",
+            "expiry_date": "2035-05-10",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "sans",
+          "pages": 2,
+          "name_variant": "exact",
+          "creation_date": "2024-05-20"
+        },
+        {
+          "filename": "upload_5.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "c8186154a70c6bd527dbd4ff37bc7120dd5435008f0cc6c8b1c2b984e45bf666",
+          "fields": {
+            "institution_name_written": "Sri Chopra College of Engineering, Lucknow",
+            "institution_name_canonical": "Sri Chopra College of Engineering",
+            "institution_id": "1-29848485517",
+            "issue_date": "2024-12-02",
+            "expiry_date": "2027-12-02",
+            "intake": 120,
+            "proposed_intake": null,
+            "reference_id": "AFL-NRO-2024-0004196",
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2024-12-27"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0017",
+      "plan_key": "D08",
+      "category": "eoa_renewal_basic",
+      "split": "dev",
+      "label": "defective",
+      "institution_id": "1-55045808051",
+      "institution_name": "Subramaniam Institute of Science and Technology",
+      "region": "SWRO",
+      "submission_date": "2026-02-13",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter"
+      ],
+      "defects": [
+        {
+          "defect_type": "duplicate_file",
+          "doc_type": "affiliation_letter",
+          "detail": {
+            "source_application_id": "APP-0001",
+            "source_filename": "upload_1.pdf"
+          }
+        },
+        {
+          "defect_type": "expired_lease",
+          "doc_type": "lease",
+          "detail": {
+            "expiry_date": "2025-11-14",
+            "submission_date": "2026-02-13"
+          }
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "978eb3fa440cd1c718d6b2ed79eb62dedfba67bfb770c070a023d0437413e771",
+          "fields": {
+            "institution_name_written": "Subramaniam Institute of Science and Tech.",
+            "institution_name_canonical": "Subramaniam Institute of Science and Technology",
+            "institution_id": "1-55045808051",
+            "issue_date": "2026-01-01",
+            "expiry_date": "2028-12-31",
+            "intake": 300,
+            "proposed_intake": null,
+            "reference_id": "AFL-SWRO-2026-0004104",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2026-01-26",
+          "reused_from": {
+            "application_id": "APP-0001",
+            "filename": "upload_1.pdf"
+          }
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "lease",
+          "sha256": "ee2604105ec94a005714eaf418067aa92bf7d94007f647342c926d9f8a9c13df",
+          "fields": {
+            "institution_name_written": "Subramaniam Institute of Science and Technology, Hyderabad",
+            "institution_name_canonical": "Subramaniam Institute of Science and Technology",
+            "institution_id": null,
+            "issue_date": "2014-11-17",
+            "expiry_date": "2025-11-14",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 2,
+          "name_variant": "city_suffix",
+          "creation_date": "2014-11-22"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affidavit",
+          "sha256": "93fbf17a5b2fd669d467999bf75db735948e2e18a399884aaf30f0555042db8a",
+          "fields": {
+            "institution_name_written": "M/s Subramaniam Institute of Science and Technology",
+            "institution_name_canonical": "Subramaniam Institute of Science and Technology",
+            "institution_id": "1-55045808051",
+            "issue_date": "2026-01-31",
+            "expiry_date": null,
+            "intake": 300,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "SWRO/1-55045808051/2025/EOA"
+          },
+          "layout": "L1",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2026-03-02"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "noc",
+          "sha256": "1a4ba32b48bbd3f582327a93ad24162bd522d24d754706ae3ff5c8cbbdc743e0",
+          "fields": {
+            "institution_name_written": "SUBRAMANIAM INSTITUTE OF SCIENCE AND TECHNOLOGY",
+            "institution_name_canonical": "Subramaniam Institute of Science and Technology",
+            "institution_id": "1-55045808051",
+            "issue_date": "2025-01-21",
+            "expiry_date": "2028-01-21",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-SWRO-2025-0004197",
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2025-02-16"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0018",
+      "plan_key": "D04",
+      "category": "eoa_new_course",
+      "split": "test",
+      "label": "defective",
+      "institution_id": "1-78409404617",
+      "institution_name": "Sri Sachdev Institute of Technology",
+      "region": "CRO",
+      "submission_date": "2026-03-25",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter",
+        "accreditation_certificate"
+      ],
+      "defects": [
+        {
+          "defect_type": "expired_accreditation",
+          "doc_type": "accreditation_certificate",
+          "detail": {
+            "expiry_date": "2025-05-31",
+            "submission_date": "2026-03-25"
+          }
+        },
+        {
+          "defect_type": "name_mismatch",
+          "doc_type": "affidavit",
+          "detail": {
+            "written": "Sri Gole Institute of Technology",
+            "canonical": "Sri Sachdev Institute of Technology",
+            "kind": "mismatch_other_institution"
+          }
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "48496db6edef09c35cf44a31ef76a425b9e6a46be830c787203c8cdd35f5c594",
+          "fields": {
+            "institution_name_written": "Sri Sachdev Institute of Technology (Autonomous)",
+            "institution_name_canonical": "Sri Sachdev Institute of Technology",
+            "institution_id": "1-78409404617",
+            "issue_date": "2025-10-06",
+            "expiry_date": "2028-10-05",
+            "intake": 240,
+            "proposed_intake": null,
+            "reference_id": "AFL-CRO-2025-0004198",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "autonomous",
+          "creation_date": "2025-11-03"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "lease",
+          "sha256": "6487e524f32fc0e6fd4ddfaed0df1f02d9d42e3ed62d47d4c81ceb8890c19824",
+          "fields": {
+            "institution_name_written": "Sri Sachdev Institute of Technology (Autonomous)",
+            "institution_name_canonical": "Sri Sachdev Institute of Technology",
+            "institution_id": null,
+            "issue_date": "2022-08-03",
+            "expiry_date": "2033-07-31",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 2,
+          "name_variant": "autonomous",
+          "creation_date": "2022-08-10"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "noc",
+          "sha256": "bca0736f9f34749437f1f6a3c799005305394dac31a78dd6477f04884f2d55c5",
+          "fields": {
+            "institution_name_written": "Sri Sachdev Institute of Technology",
+            "institution_name_canonical": "Sri Sachdev Institute of Technology",
+            "institution_id": "1-78409404617",
+            "issue_date": "2025-08-02",
+            "expiry_date": "2028-08-01",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-CRO-2025-0004203",
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "exact",
+          "creation_date": "2025-08-17"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "accreditation_certificate",
+          "sha256": "ab43fe308a3c4dc80228272c0ebc2dcc0ba7a441400ff8b50838539aab8e7b90",
+          "fields": {
+            "institution_name_written": "SRI SACHDEV INSTITUTE OF TECHNOLOGY",
+            "institution_name_canonical": "Sri Sachdev Institute of Technology",
+            "institution_id": "1-78409404617",
+            "issue_date": "2022-06-01",
+            "expiry_date": "2025-05-31",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2022-06-26"
+        },
+        {
+          "filename": "upload_5.pdf",
+          "doc_type": "affidavit",
+          "sha256": "2598d03f9bcec0a665561424bdf695fd35141a60a30653785659b3625826921b",
+          "fields": {
+            "institution_name_written": "Sri Gole Institute of Technology",
+            "institution_name_canonical": "Sri Sachdev Institute of Technology",
+            "institution_id": "1-78409404617",
+            "issue_date": "2026-03-20",
+            "expiry_date": null,
+            "intake": 240,
+            "proposed_intake": 120,
+            "reference_id": null,
+            "letter_id": "CRO/1-78409404617/2025/EOA"
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "mismatch_other_institution",
+          "creation_date": "2026-04-18"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0019",
+      "plan_key": "C07",
+      "category": "eoa_new_course",
+      "split": "test",
+      "label": "clean",
+      "institution_id": "1-69991184887",
+      "institution_name": "Rattan Institute of Engineering and Technology",
+      "region": "SRO",
+      "submission_date": "2026-03-18",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter",
+        "accreditation_certificate"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affidavit",
+          "sha256": "b51e96e7836e6263e83804238b8642cb6bf08fbb340efcb151cd40d08fad7e8b",
+          "fields": {
+            "institution_name_written": "RATTAN INSTITUTE OF ENGINEERING AND TECHNOLOGY",
+            "institution_name_canonical": "Rattan Institute of Engineering and Technology",
+            "institution_id": "1-69991184887",
+            "issue_date": "2026-02-26",
+            "expiry_date": null,
+            "intake": 300,
+            "proposed_intake": 60,
+            "reference_id": null,
+            "letter_id": "SRO/1-69991184887/2025/EOA"
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2026-02-28"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "lease",
+          "sha256": "ab08057f08af4a7812558938f4e67ac756e35ef646f49d01d9c923f1c3e95348",
+          "fields": {
+            "institution_name_written": "Rattan Inst. of Engg. & Tech.",
+            "institution_name_canonical": "Rattan Institute of Engineering and Technology",
+            "institution_id": null,
+            "issue_date": "2024-09-05",
+            "expiry_date": "2035-09-03",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "serif",
+          "pages": 2,
+          "name_variant": "abbrev",
+          "creation_date": "2024-09-29"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "noc",
+          "sha256": "1d2babb13e947998ee732ec0e79732f8d1609867605b94e1c75b54fc8ed90f0a",
+          "fields": {
+            "institution_name_written": "M/s Rattan Institute of Engineering and Technology",
+            "institution_name_canonical": "Rattan Institute of Engineering and Technology",
+            "institution_id": "1-69991184887",
+            "issue_date": "2025-04-03",
+            "expiry_date": "2028-04-02",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-SRO-2025-0004205",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2025-04-16"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "accreditation_certificate",
+          "sha256": "76dca8f9702811e81ccea541904281224e9e6462f1fa44be2273103546f2415b",
+          "fields": {
+            "institution_name_written": "Rattan Inst. of Engineering and Tech.",
+            "institution_name_canonical": "Rattan Institute of Engineering and Technology",
+            "institution_id": "1-69991184887",
+            "issue_date": "2025-07-30",
+            "expiry_date": "2028-07-29",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2025-08-27"
+        },
+        {
+          "filename": "upload_5.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "93cbefc5e648bb295e02597f17ee66d0a0f8ce23348eeeedd7c0d297360572bc",
+          "fields": {
+            "institution_name_written": "RATTAN INSTITUTE OF ENGINEERING AND TECHNOLOGY",
+            "institution_name_canonical": "Rattan Institute of Engineering and Technology",
+            "institution_id": "1-69991184887",
+            "issue_date": "2025-06-02",
+            "expiry_date": "2028-06-01",
+            "intake": 300,
+            "proposed_intake": null,
+            "reference_id": "AFL-SRO-2025-0004207",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2025-06-29"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0020",
+      "plan_key": "C03",
+      "category": "eoa_new_course",
+      "split": "dev",
+      "label": "clean",
+      "institution_id": "1-54764787985",
+      "institution_name": "Kapoor Engineering College",
+      "region": "WRO",
+      "submission_date": "2026-02-19",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter",
+        "accreditation_certificate"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "6efe90c47eef799a99826f6a8fdb9dca78b275bcc2630106b8f821a44d870367",
+          "fields": {
+            "institution_name_written": "Kapoor Engineering College",
+            "institution_name_canonical": "Kapoor Engineering College",
+            "institution_id": "1-54764787985",
+            "issue_date": "2024-11-03",
+            "expiry_date": "2027-11-03",
+            "intake": 180,
+            "proposed_intake": null,
+            "reference_id": "AFL-WRO-2024-0004209",
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2024-11-06"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "accreditation_certificate",
+          "sha256": "94e9d0c1b3c805f4ec3ba8fe627e3ce6891ee90f80f9a8decab77743007a361d",
+          "fields": {
+            "institution_name_written": "Kapoor Engineering College",
+            "institution_name_canonical": "Kapoor Engineering College",
+            "institution_id": "1-54764787985",
+            "issue_date": "2023-09-28",
+            "expiry_date": "2026-09-27",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2023-10-13"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affidavit",
+          "sha256": "6f2c8ec3963315a6ef1a987c66e8935d95fc409c69a4ca8ac26df4eac1eb3c5f",
+          "fields": {
+            "institution_name_written": "KAPOOR ENGINEERING COLLEGE",
+            "institution_name_canonical": "Kapoor Engineering College",
+            "institution_id": "1-54764787985",
+            "issue_date": "2026-02-02",
+            "expiry_date": null,
+            "intake": 180,
+            "proposed_intake": 60,
+            "reference_id": null,
+            "letter_id": "WRO/1-54764787985/2025/EOA"
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2026-02-28"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "lease",
+          "sha256": "dc03a9f2d8a60878e0343f1c13064fa16c3548d6bbb3c8edd943bd0c3a4ff158",
+          "fields": {
+            "institution_name_written": "Kapoor Engineering College",
+            "institution_name_canonical": "Kapoor Engineering College",
+            "institution_id": null,
+            "issue_date": "2024-10-29",
+            "expiry_date": "2035-10-27",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 2,
+          "name_variant": "abbrev",
+          "creation_date": "2024-11-14"
+        },
+        {
+          "filename": "upload_5.pdf",
+          "doc_type": "noc",
+          "sha256": "97439df678e965b528ca087079b7abedd99df6773e12c23026d01c03a97fd9ce",
+          "fields": {
+            "institution_name_written": "KAPOOR ENGINEERING COLLEGE",
+            "institution_name_canonical": "Kapoor Engineering College",
+            "institution_id": "1-54764787985",
+            "issue_date": "2024-07-16",
+            "expiry_date": "2027-07-16",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-WRO-2024-0004210",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2024-07-25"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0021",
+      "plan_key": "D06",
+      "category": "eoa_new_course",
+      "split": "test",
+      "label": "defective",
+      "institution_id": "1-29848485517",
+      "institution_name": "Sri Chopra College of Engineering",
+      "region": "NRO",
+      "submission_date": "2026-02-28",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter",
+        "accreditation_certificate"
+      ],
+      "defects": [
+        {
+          "defect_type": "duplicate_file",
+          "doc_type": "accreditation_certificate",
+          "detail": {
+            "source_application_id": "APP-0016",
+            "source_filename": "upload_2.pdf"
+          }
+        },
+        {
+          "defect_type": "qr_wrong_institution",
+          "doc_type": "affiliation_letter",
+          "detail": {
+            "reference_id": "AFL-NRO-2025-0004219",
+            "registry_institution_id": "1-94266066725"
+          }
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affidavit",
+          "sha256": "1469bf2c3aea4fc7bbe4180dbace172e0391e365f3680a48f2bac1112bb7a56f",
+          "fields": {
+            "institution_name_written": "Sri Chopra College of Engineering (Autonomous)",
+            "institution_name_canonical": "Sri Chopra College of Engineering",
+            "institution_id": "1-29848485517",
+            "issue_date": "2026-02-07",
+            "expiry_date": null,
+            "intake": 120,
+            "proposed_intake": 60,
+            "reference_id": null,
+            "letter_id": "NRO/1-29848485517/2025/EOA"
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "autonomous",
+          "creation_date": "2026-03-04"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "lease",
+          "sha256": "2b72985d0e91bed3db1b70c495dd276fe44c7e6566a38bd705711f8f97264b79",
+          "fields": {
+            "institution_name_written": "Sri Chopra College of Engineering (Autonomous)",
+            "institution_name_canonical": "Sri Chopra College of Engineering",
+            "institution_id": null,
+            "issue_date": "2023-12-15",
+            "expiry_date": "2034-12-12",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "mono",
+          "pages": 2,
+          "name_variant": "autonomous",
+          "creation_date": "2024-01-02"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "accreditation_certificate",
+          "sha256": "7512fcc8fa1abc8149db611b0d3b789e51e2de9990ed67a2ed25ecd940c32d12",
+          "fields": {
+            "institution_name_written": "Sri Chopra College of Engineering",
+            "institution_name_canonical": "Sri Chopra College of Engineering",
+            "institution_id": "1-29848485517",
+            "issue_date": "2023-11-15",
+            "expiry_date": "2026-11-14",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2023-11-22",
+          "reused_from": {
+            "application_id": "APP-0016",
+            "filename": "upload_2.pdf"
+          }
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "noc",
+          "sha256": "674c781790b843f19a0efb779276d827ffc53e9a15e90dd275ea4a8258aa2b44",
+          "fields": {
+            "institution_name_written": "M/s Sri Chopra College of Engineering",
+            "institution_name_canonical": "Sri Chopra College of Engineering",
+            "institution_id": "1-29848485517",
+            "issue_date": "2025-03-30",
+            "expiry_date": "2028-03-29",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-NRO-2025-0004216",
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2025-04-13"
+        },
+        {
+          "filename": "upload_5.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "246a2b62d905d1fa89e928119206abc9aab02c3c6c6866998022d318b7fb436f",
+          "fields": {
+            "institution_name_written": "Sri Chopra College of Engineering, Lucknow",
+            "institution_name_canonical": "Sri Chopra College of Engineering",
+            "institution_id": "1-29848485517",
+            "issue_date": "2025-07-21",
+            "expiry_date": "2028-07-20",
+            "intake": 120,
+            "proposed_intake": null,
+            "reference_id": "AFL-NRO-2025-0004219",
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2025-08-09"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0022",
+      "plan_key": "C20",
+      "category": "eoa_intake_change",
+      "split": "test",
+      "label": "clean",
+      "institution_id": "1-27209549353",
+      "institution_name": "Pioneer Viswanathan College of Engineering",
+      "region": "SWRO",
+      "submission_date": "2026-03-14",
+      "required_documents": [
+        "affidavit",
+        "affiliation_letter",
+        "previous_eoa_letter"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "previous_eoa_letter",
+          "sha256": "509add5c88cf33ba840bf031c7196ab40cbc524092e9fc8322af409148b8ce6a",
+          "fields": {
+            "institution_name_written": "Pioneer Viswanathan College of Engineering",
+            "institution_name_canonical": "Pioneer Viswanathan College of Engineering",
+            "institution_id": "1-27209549353",
+            "issue_date": "2025-05-08",
+            "expiry_date": "2026-06-30",
+            "intake": 360,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "SWRO/1-27209549353/2025/EOA"
+          },
+          "layout": "L2",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2025-05-31"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "47bc66ba438c8556313541ed876732e8f60d85b471e4ddace7f57e5af0a99ca2",
+          "fields": {
+            "institution_name_written": "PIONEER VISWANATHAN COLLEGE OF ENGINEERING",
+            "institution_name_canonical": "Pioneer Viswanathan College of Engineering",
+            "institution_id": "1-27209549353",
+            "issue_date": "2025-06-24",
+            "expiry_date": "2028-06-23",
+            "intake": 360,
+            "proposed_intake": null,
+            "reference_id": "AFL-SWRO-2025-0004221",
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2025-07-02"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affidavit",
+          "sha256": "5d4b2211fa9c5c088fb26d2b648dd1ed22772e6d183c26fdfb99d536b65f6b3e",
+          "fields": {
+            "institution_name_written": "Pioneer Viswanathan College of Engineering, Visakhapatnam",
+            "institution_name_canonical": "Pioneer Viswanathan College of Engineering",
+            "institution_id": "1-27209549353",
+            "issue_date": "2026-03-12",
+            "expiry_date": null,
+            "intake": 360,
+            "proposed_intake": 420,
+            "reference_id": null,
+            "letter_id": "SWRO/1-27209549353/2025/EOA"
+          },
+          "layout": "L2",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2026-03-19"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0023",
+      "plan_key": "C19",
+      "category": "eoa_intake_change",
+      "split": "test",
+      "label": "clean",
+      "institution_id": "1-36567113117",
+      "institution_name": "Pioneer Bir Institute of Technology",
+      "region": "SRO",
+      "submission_date": "2026-02-03",
+      "required_documents": [
+        "affidavit",
+        "affiliation_letter",
+        "previous_eoa_letter"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "37c85e665602e23714b6924cd05c1a23fccb8acfb3abd6d72aba6d05270ffd67",
+          "fields": {
+            "institution_name_written": "Pioneer Bir Institute of Technology, Coimbatore",
+            "institution_name_canonical": "Pioneer Bir Institute of Technology",
+            "institution_id": "1-36567113117",
+            "issue_date": "2025-09-16",
+            "expiry_date": "2028-09-15",
+            "intake": 60,
+            "proposed_intake": null,
+            "reference_id": "AFL-SRO-2025-0004223",
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2025-10-14"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "affidavit",
+          "sha256": "790d8eb6ababce5ae4b0361905c91acaa5f331680794995ecbd72abc2d3b03a6",
+          "fields": {
+            "institution_name_written": "Pioneer Bir Institute of Technology (Autonomous)",
+            "institution_name_canonical": "Pioneer Bir Institute of Technology",
+            "institution_id": "1-36567113117",
+            "issue_date": "2026-01-27",
+            "expiry_date": null,
+            "intake": 60,
+            "proposed_intake": 180,
+            "reference_id": null,
+            "letter_id": "SRO/1-36567113117/2025/EOA"
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "autonomous",
+          "creation_date": "2026-01-27"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "previous_eoa_letter",
+          "sha256": "ea9d3f8e4d394a1f2ff90b1d704ecf6f02bbb88a4a914a33ac17f513f4d5d4a6",
+          "fields": {
+            "institution_name_written": "Pioneer Bir Institute of Technology",
+            "institution_name_canonical": "Pioneer Bir Institute of Technology",
+            "institution_id": "1-36567113117",
+            "issue_date": "2025-04-26",
+            "expiry_date": "2026-06-30",
+            "intake": 60,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "SRO/1-36567113117/2025/EOA"
+          },
+          "layout": "L4",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "exact",
+          "creation_date": "2025-04-26"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0024",
+      "plan_key": "C14",
+      "category": "eoa_renewal_basic",
+      "split": "test",
+      "label": "clean",
+      "institution_id": "1-62840244242",
+      "institution_name": "Sunrise Gupta Institute of Technology",
+      "region": "SWRO",
+      "submission_date": "2026-02-03",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affidavit",
+          "sha256": "76efecb23eabd20df9a5174082e4033a9c42d0f20b4a27d3fe775fa74a222ca4",
+          "fields": {
+            "institution_name_written": "M/s Sunrise Gupta Institute of Technology",
+            "institution_name_canonical": "Sunrise Gupta Institute of Technology",
+            "institution_id": "1-62840244242",
+            "issue_date": "2026-01-11",
+            "expiry_date": null,
+            "intake": 60,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "SWRO/1-62840244242/2025/EOA"
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2026-01-15"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "lease",
+          "sha256": "3be7e395ed4389adfce387bae9a32f3d07a3645c65cca771b0e816aa1f25cd79",
+          "fields": {
+            "institution_name_written": "Sunrise Gupta Institute of Technology, Hyderabad",
+            "institution_name_canonical": "Sunrise Gupta Institute of Technology",
+            "institution_id": null,
+            "issue_date": "2022-01-30",
+            "expiry_date": "2033-01-27",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "mono",
+          "pages": 2,
+          "name_variant": "city_suffix",
+          "creation_date": "2022-02-25"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "2c96a02e7c8920e992634683d60f9458960ea722467eb92f53498b933fecc1ea",
+          "fields": {
+            "institution_name_written": "Sunrise Gupta Institute of Technology",
+            "institution_name_canonical": "Sunrise Gupta Institute of Technology",
+            "institution_id": "1-62840244242",
+            "issue_date": "2024-10-31",
+            "expiry_date": "2027-10-31",
+            "intake": 60,
+            "proposed_intake": null,
+            "reference_id": "AFL-SWRO-2024-0004225",
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "exact",
+          "creation_date": "2024-11-10"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "noc",
+          "sha256": "95fb8e1052c128e3a5440d10c88135592c6df1f3171e82f07fcf5d26d36efbea",
+          "fields": {
+            "institution_name_written": "SUNRISE GUPTA INSTITUTE OF TECHNOLOGY",
+            "institution_name_canonical": "Sunrise Gupta Institute of Technology",
+            "institution_id": "1-62840244242",
+            "issue_date": "2024-09-09",
+            "expiry_date": "2027-09-09",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-SWRO-2024-0004232",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2024-09-16"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0025",
+      "plan_key": "D20",
+      "category": "eoa_intake_change",
+      "split": "dev",
+      "label": "defective",
+      "institution_id": "1-99507699758",
+      "institution_name": "Thaker College of Engineering",
+      "region": "NRO",
+      "submission_date": "2026-02-09",
+      "required_documents": [
+        "affidavit",
+        "affiliation_letter",
+        "previous_eoa_letter"
+      ],
+      "defects": [
+        {
+          "defect_type": "qr_wrong_institution",
+          "doc_type": "affiliation_letter",
+          "detail": {
+            "reference_id": "AFL-NRO-2025-0004235",
+            "registry_institution_id": "1-75699781599"
+          }
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "previous_eoa_letter",
+          "sha256": "5a6f6be70b2bdeefe7af42317e754cb7ff9a861bd46a9622876f72f39022f232",
+          "fields": {
+            "institution_name_written": "THAKER COLLEGE OF ENGINEERING",
+            "institution_name_canonical": "Thaker College of Engineering",
+            "institution_id": "1-99507699758",
+            "issue_date": "2025-04-13",
+            "expiry_date": "2026-06-30",
+            "intake": 180,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "NRO/1-99507699758/2025/EOA"
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2025-05-12"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "d54e9805a0e6cfb7c912616544cb5d25dc3f808c530c0c3dade74da634d03d89",
+          "fields": {
+            "institution_name_written": "Thaker College of Engineering",
+            "institution_name_canonical": "Thaker College of Engineering",
+            "institution_id": "1-99507699758",
+            "issue_date": "2025-07-18",
+            "expiry_date": "2028-07-17",
+            "intake": 180,
+            "proposed_intake": null,
+            "reference_id": "AFL-NRO-2025-0004235",
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "exact",
+          "creation_date": "2025-07-24"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affidavit",
+          "sha256": "53a83e392aaafb49106a1db14d3c3d888279822d43d9b0b7395d37770274aeff",
+          "fields": {
+            "institution_name_written": "Thaker College of Engineering, Chandigarh",
+            "institution_name_canonical": "Thaker College of Engineering",
+            "institution_id": "1-99507699758",
+            "issue_date": "2026-01-28",
+            "expiry_date": null,
+            "intake": 180,
+            "proposed_intake": 300,
+            "reference_id": null,
+            "letter_id": "NRO/1-99507699758/2025/EOA"
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2026-02-25"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0026",
+      "plan_key": "D18",
+      "category": "eoa_intake_change",
+      "split": "dev",
+      "label": "defective",
+      "institution_id": "1-37976843575",
+      "institution_name": "Saraswathi Rama Institute of Technology",
+      "region": "WRO",
+      "submission_date": "2026-02-15",
+      "required_documents": [
+        "affidavit",
+        "affiliation_letter",
+        "previous_eoa_letter"
+      ],
+      "defects": [
+        {
+          "defect_type": "duplicate_file",
+          "doc_type": "previous_eoa_letter",
+          "detail": {
+            "source_application_id": "APP-0011",
+            "source_filename": "upload_1.pdf"
+          }
+        },
+        {
+          "defect_type": "qr_absent",
+          "doc_type": "affiliation_letter",
+          "detail": {
+            "reference_id": "AFL-WRO-2025-0004238"
+          }
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "previous_eoa_letter",
+          "sha256": "1e57da5aaecf94e94809d1050c2cd6690d31930b1c2a5ce8704cf76a7188dc23",
+          "fields": {
+            "institution_name_written": "Saraswathi Rama Institute of Technology, Pune",
+            "institution_name_canonical": "Saraswathi Rama Institute of Technology",
+            "institution_id": "1-37976843575",
+            "issue_date": "2025-04-25",
+            "expiry_date": "2026-06-30",
+            "intake": 360,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "WRO/1-37976843575/2025/EOA"
+          },
+          "layout": "L2",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2025-05-20",
+          "reused_from": {
+            "application_id": "APP-0011",
+            "filename": "upload_1.pdf"
+          }
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "db806f054dd6918278213c29d0e7b59b4f684259598b917bfceb9888225ab74d",
+          "fields": {
+            "institution_name_written": "Saraswathi Rama Institute of Technology, Pune",
+            "institution_name_canonical": "Saraswathi Rama Institute of Technology",
+            "institution_id": "1-37976843575",
+            "issue_date": "2025-07-21",
+            "expiry_date": "2028-07-20",
+            "intake": 360,
+            "proposed_intake": null,
+            "reference_id": "AFL-WRO-2025-0004238",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2025-08-05"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affidavit",
+          "sha256": "258e84cd06f56303e125c028b35cce3be6eb63297ef6be5dc2faed14ca11e732",
+          "fields": {
+            "institution_name_written": "Saraswathi Rama Institute of Technology, Pune",
+            "institution_name_canonical": "Saraswathi Rama Institute of Technology",
+            "institution_id": "1-37976843575",
+            "issue_date": "2026-02-04",
+            "expiry_date": null,
+            "intake": 360,
+            "proposed_intake": 480,
+            "reference_id": null,
+            "letter_id": "WRO/1-37976843575/2025/EOA"
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2026-02-14"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0027",
+      "plan_key": "C02",
+      "category": "eoa_new_course",
+      "split": "dev",
+      "label": "clean",
+      "institution_id": "1-98974626737",
+      "institution_name": "Maharishi Konda School of Engineering and Technology",
+      "region": "SWRO",
+      "submission_date": "2026-03-11",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter",
+        "accreditation_certificate"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "8674dca48baca468064899bd1da2fc36c8867e2bc2fef739c16560613c8df292",
+          "fields": {
+            "institution_name_written": "Maharishi Konda School of Engineering & Technology",
+            "institution_name_canonical": "Maharishi Konda School of Engineering and Technology",
+            "institution_id": "1-98974626737",
+            "issue_date": "2025-06-09",
+            "expiry_date": "2028-06-08",
+            "intake": 360,
+            "proposed_intake": null,
+            "reference_id": "AFL-SWRO-2025-0004241",
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2025-07-06"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "accreditation_certificate",
+          "sha256": "31709ba4e06c567773f844aa39f1eab9fe1563eeb578806f30fbbda0f5600ecb",
+          "fields": {
+            "institution_name_written": "MAHARISHI KONDA SCHOOL OF ENGINEERING AND TECHNOLOGY",
+            "institution_name_canonical": "Maharishi Konda School of Engineering and Technology",
+            "institution_id": "1-98974626737",
+            "issue_date": "2024-01-12",
+            "expiry_date": "2027-01-11",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2024-01-21"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "lease",
+          "sha256": "937fbf3cd4560331362aefa7173b5686e2ff0cbf32e537dfdade9b262133722e",
+          "fields": {
+            "institution_name_written": "M/s Maharishi Konda School of Engineering and Technology",
+            "institution_name_canonical": "Maharishi Konda School of Engineering and Technology",
+            "institution_id": null,
+            "issue_date": "2022-07-09",
+            "expiry_date": "2033-07-06",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "serif",
+          "pages": 2,
+          "name_variant": "ms_prefix",
+          "creation_date": "2022-07-15"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "noc",
+          "sha256": "4e3bd7ccd55c01240e3879c342c7b1cce50af747bb2552538bd1c225558c11df",
+          "fields": {
+            "institution_name_written": "Maharishi Konda School of Engineering and Technology (Autonomous)",
+            "institution_name_canonical": "Maharishi Konda School of Engineering and Technology",
+            "institution_id": "1-98974626737",
+            "issue_date": "2024-08-16",
+            "expiry_date": "2027-08-16",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-SWRO-2024-0004244",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "autonomous",
+          "creation_date": "2024-09-07"
+        },
+        {
+          "filename": "upload_5.pdf",
+          "doc_type": "affidavit",
+          "sha256": "d24bf33f7c243dc811ff0b42bd4874a5d4db8f2d51d2f3f53623084d33a27c4f",
+          "fields": {
+            "institution_name_written": "Maharishi Konda School of Engineering and Technology, Mysuru",
+            "institution_name_canonical": "Maharishi Konda School of Engineering and Technology",
+            "institution_id": "1-98974626737",
+            "issue_date": "2026-02-14",
+            "expiry_date": null,
+            "intake": 360,
+            "proposed_intake": 120,
+            "reference_id": null,
+            "letter_id": "SWRO/1-98974626737/2025/EOA"
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2026-02-18"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0028",
+      "plan_key": "C13",
+      "category": "eoa_renewal_basic",
+      "split": "test",
+      "label": "clean",
+      "institution_id": "1-89947766702",
+      "institution_name": "Crescent Kothari School of Engineering and Technology",
+      "region": "SRO",
+      "submission_date": "2026-02-18",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "noc",
+          "sha256": "92aa721a0c27339e4b448d171d69eac6a8671aeeeae251045e00e27954295259",
+          "fields": {
+            "institution_name_written": "M/s Crescent Kothari School of Engineering and Technology",
+            "institution_name_canonical": "Crescent Kothari School of Engineering and Technology",
+            "institution_id": "1-89947766702",
+            "issue_date": "2024-07-15",
+            "expiry_date": "2027-07-15",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-SRO-2024-0004251",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2024-07-15"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "lease",
+          "sha256": "7603bef29410eac18cff1537a2fe511cee7d6f61393a794b48553ffb9066b061",
+          "fields": {
+            "institution_name_written": "Crescent Kothari School of Engineering and Technology, Coimbatore",
+            "institution_name_canonical": "Crescent Kothari School of Engineering and Technology",
+            "institution_id": null,
+            "issue_date": "2024-01-27",
+            "expiry_date": "2035-01-24",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "serif",
+          "pages": 2,
+          "name_variant": "city_suffix",
+          "creation_date": "2024-02-22"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affidavit",
+          "sha256": "fd766cef6e712a6c23ad3be820667b747e69c3fad56e594f18bd94c145faf98d",
+          "fields": {
+            "institution_name_written": "Crescent Kothari School of Engineering & Technology",
+            "institution_name_canonical": "Crescent Kothari School of Engineering and Technology",
+            "institution_id": "1-89947766702",
+            "issue_date": "2026-02-17",
+            "expiry_date": null,
+            "intake": 240,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "SRO/1-89947766702/2025/EOA"
+          },
+          "layout": "L1",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2026-03-09"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "e61741ea446856bc3325a71970ed523a8a1c784fe87cb60b4b2defc3cf9102f3",
+          "fields": {
+            "institution_name_written": "Crescent Kothari School of Engg. & Tech.",
+            "institution_name_canonical": "Crescent Kothari School of Engineering and Technology",
+            "institution_id": "1-89947766702",
+            "issue_date": "2025-06-06",
+            "expiry_date": "2028-06-05",
+            "intake": 240,
+            "proposed_intake": null,
+            "reference_id": "AFL-SRO-2025-0004257",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2025-06-09"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0029",
+      "plan_key": "C05",
+      "category": "eoa_new_course",
+      "split": "test",
+      "label": "clean",
+      "institution_id": "1-38194647727",
+      "institution_name": "Heritage Boase Institute of Technology",
+      "region": "ERO",
+      "submission_date": "2026-02-22",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter",
+        "accreditation_certificate"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "noc",
+          "sha256": "de39bffe5a107bda3f5ab1b201ad023f47fc826274b646d35649316ee53dd657",
+          "fields": {
+            "institution_name_written": "HERITAGE BOASE INSTITUTE OF TECHNOLOGY",
+            "institution_name_canonical": "Heritage Boase Institute of Technology",
+            "institution_id": "1-38194647727",
+            "issue_date": "2024-10-07",
+            "expiry_date": "2027-10-07",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-ERO-2024-0004259",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2024-11-02"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "accreditation_certificate",
+          "sha256": "4b4fa772372ffbaa1e3865a673ee7015dc059988138e6e4c6dae6c47cd682f54",
+          "fields": {
+            "institution_name_written": "Heritage Boase Inst. of Technology",
+            "institution_name_canonical": "Heritage Boase Institute of Technology",
+            "institution_id": "1-38194647727",
+            "issue_date": "2025-01-12",
+            "expiry_date": "2028-01-12",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2025-01-23"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "5e5e25167fe34ccb20b5f54f4fc60820539eb5a22cbc10f4277bab14d87e33cb",
+          "fields": {
+            "institution_name_written": "Heritage Boase Inst. of Tech.",
+            "institution_name_canonical": "Heritage Boase Institute of Technology",
+            "institution_id": "1-38194647727",
+            "issue_date": "2025-06-29",
+            "expiry_date": "2028-06-28",
+            "intake": 60,
+            "proposed_intake": null,
+            "reference_id": "AFL-ERO-2025-0004266",
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2025-07-11"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "affidavit",
+          "sha256": "e69faaad7fcff2bb11ca179f34cd82772d91fc4a4deee3a70a99d29673d11672",
+          "fields": {
+            "institution_name_written": "HERITAGE BOASE INSTITUTE OF TECHNOLOGY",
+            "institution_name_canonical": "Heritage Boase Institute of Technology",
+            "institution_id": "1-38194647727",
+            "issue_date": "2026-02-18",
+            "expiry_date": null,
+            "intake": 60,
+            "proposed_intake": 120,
+            "reference_id": null,
+            "letter_id": "ERO/1-38194647727/2025/EOA"
+          },
+          "layout": "L1",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2026-02-22"
+        },
+        {
+          "filename": "upload_5.pdf",
+          "doc_type": "lease",
+          "sha256": "1e1dc1ecf063da2a4a25cb801158607ef75d4c6df714320007f0f7590f0e35c3",
+          "fields": {
+            "institution_name_written": "HERITAGE BOASE INSTITUTE OF TECHNOLOGY",
+            "institution_name_canonical": "Heritage Boase Institute of Technology",
+            "institution_id": null,
+            "issue_date": "2024-10-08",
+            "expiry_date": "2035-10-06",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "sans",
+          "pages": 2,
+          "name_variant": "upper",
+          "creation_date": "2024-11-02"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0030",
+      "plan_key": "C11",
+      "category": "eoa_renewal_basic",
+      "split": "dev",
+      "label": "clean",
+      "institution_id": "1-88814873856",
+      "institution_name": "Basak Institute of Engineering and Technology",
+      "region": "ERO",
+      "submission_date": "2026-02-22",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "843bcbf14764b083891cbfbf3f5edc224fa21e36b9bfac6b486e3d53a667ffe2",
+          "fields": {
+            "institution_name_written": "Basak Institute of Engineering & Technology",
+            "institution_name_canonical": "Basak Institute of Engineering and Technology",
+            "institution_id": "1-88814873856",
+            "issue_date": "2025-09-18",
+            "expiry_date": "2028-09-17",
+            "intake": 360,
+            "proposed_intake": null,
+            "reference_id": "AFL-ERO-2025-0004267",
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2025-09-21"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "noc",
+          "sha256": "45cf95c268e27f7b6968710620447991d3a221225aad31e3686b9b92beff00d3",
+          "fields": {
+            "institution_name_written": "BASAK INSTITUTE OF ENGINEERING AND TECHNOLOGY",
+            "institution_name_canonical": "Basak Institute of Engineering and Technology",
+            "institution_id": "1-88814873856",
+            "issue_date": "2025-03-03",
+            "expiry_date": "2028-03-02",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-ERO-2025-0004270",
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2025-03-07"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "lease",
+          "sha256": "8771e74732d095abd9e43c7f694cbb479b351117f8dce6dd84402ccfc9ea8a47",
+          "fields": {
+            "institution_name_written": "M/s Basak Institute of Engineering and Technology",
+            "institution_name_canonical": "Basak Institute of Engineering and Technology",
+            "institution_id": null,
+            "issue_date": "2024-01-10",
+            "expiry_date": "2035-01-07",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "serif",
+          "pages": 2,
+          "name_variant": "ms_prefix",
+          "creation_date": "2024-02-03"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "affidavit",
+          "sha256": "85a91b0d405f0ed29ca29fba26acf8c3692da69ef901088277e6fe7cadc14a91",
+          "fields": {
+            "institution_name_written": "Basak Institute of Engineering & Technology",
+            "institution_name_canonical": "Basak Institute of Engineering and Technology",
+            "institution_id": "1-88814873856",
+            "issue_date": "2026-01-30",
+            "expiry_date": null,
+            "intake": 360,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "ERO/1-88814873856/2025/EOA"
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2026-02-15"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0031",
+      "plan_key": "D05",
+      "category": "eoa_new_course",
+      "split": "dev",
+      "label": "defective",
+      "institution_id": "1-93392116568",
+      "institution_name": "Shri Sharaf College of Engineering",
+      "region": "ERO",
+      "submission_date": "2026-02-20",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter",
+        "accreditation_certificate"
+      ],
+      "defects": [
+        {
+          "defect_type": "metadata_inconsistent",
+          "doc_type": "affiliation_letter",
+          "detail": {
+            "kind": "created_long_after_issue",
+            "offset_days": 475,
+            "stated_issue_date": "2024-10-24",
+            "pdf_creation_date": "2026-02-11"
+          }
+        },
+        {
+          "defect_type": "missing_document",
+          "doc_type": "affidavit",
+          "detail": {}
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "noc",
+          "sha256": "0e5bb5509e19d67cdbf8b18a5ac1e47d9f315207b14d39646eb60fa11cafa430",
+          "fields": {
+            "institution_name_written": "SHRI SHARAF COLLEGE OF ENGINEERING",
+            "institution_name_canonical": "Shri Sharaf College of Engineering",
+            "institution_id": "1-93392116568",
+            "issue_date": "2024-10-09",
+            "expiry_date": "2027-10-09",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-ERO-2024-0004274",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2024-10-20"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "lease",
+          "sha256": "db1a071c252aa6c1a1c01281fbb43e8a9d1de02b7b51cee81552f2e159dddb8e",
+          "fields": {
+            "institution_name_written": "M/s Shri Sharaf College of Engineering",
+            "institution_name_canonical": "Shri Sharaf College of Engineering",
+            "institution_id": null,
+            "issue_date": "2024-04-13",
+            "expiry_date": "2035-04-11",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "sans",
+          "pages": 2,
+          "name_variant": "ms_prefix",
+          "creation_date": "2024-04-14"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "347a4c80dd5b17f9241af81a326a9311d676fe3364e187e5c28fffa1c1c7cd3d",
+          "fields": {
+            "institution_name_written": "M/s Shri Sharaf College of Engineering",
+            "institution_name_canonical": "Shri Sharaf College of Engineering",
+            "institution_id": "1-93392116568",
+            "issue_date": "2024-10-24",
+            "expiry_date": "2027-10-24",
+            "intake": 360,
+            "proposed_intake": null,
+            "reference_id": "AFL-ERO-2024-0004277",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2026-02-11"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "accreditation_certificate",
+          "sha256": "56d1d84fb903096cd86a0e20f9ebb140dc3f1d41e64c5efb2db17b4830497137",
+          "fields": {
+            "institution_name_written": "Shri Sharaf Coll. of Engg.",
+            "institution_name_canonical": "Shri Sharaf College of Engineering",
+            "institution_id": "1-93392116568",
+            "issue_date": "2025-01-05",
+            "expiry_date": "2028-01-05",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2025-02-02"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0032",
+      "plan_key": "C18",
+      "category": "eoa_intake_change",
+      "split": "test",
+      "label": "clean",
+      "institution_id": "1-90705117606",
+      "institution_name": "Sunrise Cherian Institute of Engineering and Technology",
+      "region": "CRO",
+      "submission_date": "2026-02-28",
+      "required_documents": [
+        "affidavit",
+        "affiliation_letter",
+        "previous_eoa_letter"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "f54c20158d0640df7aefa7dcddba317df19bac4ad575758ef8d5aa5f9d5d5a09",
+          "fields": {
+            "institution_name_written": "Sunrise Cherian Institute of Engineering and Technology, Jabalpur",
+            "institution_name_canonical": "Sunrise Cherian Institute of Engineering and Technology",
+            "institution_id": "1-90705117606",
+            "issue_date": "2025-01-10",
+            "expiry_date": "2028-01-10",
+            "intake": 360,
+            "proposed_intake": null,
+            "reference_id": "AFL-CRO-2025-0004280",
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2025-01-11"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "previous_eoa_letter",
+          "sha256": "2458e2d56c87e67d48c6422052b922a3cadaecbb2b2b5d28017ed5c5078200e8",
+          "fields": {
+            "institution_name_written": "M/s Sunrise Cherian Institute of Engineering and Technology",
+            "institution_name_canonical": "Sunrise Cherian Institute of Engineering and Technology",
+            "institution_id": "1-90705117606",
+            "issue_date": "2025-03-07",
+            "expiry_date": "2026-06-30",
+            "intake": 360,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "CRO/1-90705117606/2025/EOA"
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2025-03-24"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affidavit",
+          "sha256": "7dacc4a0b0378a5c51a2cf3eb0d363189d3a9c81046d1a27ce6224fc16a1b36a",
+          "fields": {
+            "institution_name_written": "SUNRISE CHERIAN INSTITUTE OF ENGINEERING AND TECHNOLOGY",
+            "institution_name_canonical": "Sunrise Cherian Institute of Engineering and Technology",
+            "institution_id": "1-90705117606",
+            "issue_date": "2026-02-23",
+            "expiry_date": null,
+            "intake": 360,
+            "proposed_intake": 480,
+            "reference_id": null,
+            "letter_id": "CRO/1-90705117606/2025/EOA"
+          },
+          "layout": "L2",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2026-03-24"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0033",
+      "plan_key": "D12",
+      "category": "eoa_renewal_basic",
+      "split": "test",
+      "label": "defective",
+      "institution_id": "1-37434064274",
+      "institution_name": "Saraswathi Pau School of Engineering and Technology",
+      "region": "CRO",
+      "submission_date": "2026-03-20",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter"
+      ],
+      "defects": [
+        {
+          "defect_type": "qr_wrong_institution",
+          "doc_type": "noc",
+          "detail": {
+            "reference_id": "NOC-CRO-2025-0004281",
+            "registry_institution_id": "1-48735092725"
+          }
+        },
+        {
+          "defect_type": "duplicate_file",
+          "doc_type": "lease",
+          "detail": {
+            "source_application_id": "APP-0013",
+            "source_filename": "upload_3.pdf"
+          }
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "noc",
+          "sha256": "e429a2e2f8d992b3ab6bc05f247f099418f86bea143245338bb5d796d9c16844",
+          "fields": {
+            "institution_name_written": "Saraswathi Pau School of Engineering & Technology",
+            "institution_name_canonical": "Saraswathi Pau School of Engineering and Technology",
+            "institution_id": "1-37434064274",
+            "issue_date": "2025-04-07",
+            "expiry_date": "2028-04-06",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-CRO-2025-0004281",
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2025-04-26"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "82e24292d67cced1d506fbda9a6fd77c150ad8d4af7321440db806f034306100",
+          "fields": {
+            "institution_name_written": "Saraswathi Pau School of Engineering & Tech.",
+            "institution_name_canonical": "Saraswathi Pau School of Engineering and Technology",
+            "institution_id": "1-37434064274",
+            "issue_date": "2025-12-05",
+            "expiry_date": "2028-12-04",
+            "intake": 300,
+            "proposed_intake": null,
+            "reference_id": "AFL-CRO-2025-0004285",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2025-12-29"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "lease",
+          "sha256": "600c7482b880cdab4ace910729b6c8a79e4d7fbe50bc0b033d1c60fbde6c0664",
+          "fields": {
+            "institution_name_written": "Saraswathi Pau School of Engineering and Technology (Autonomous)",
+            "institution_name_canonical": "Saraswathi Pau School of Engineering and Technology",
+            "institution_id": null,
+            "issue_date": "2023-05-03",
+            "expiry_date": "2034-04-30",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "sans",
+          "pages": 2,
+          "name_variant": "autonomous",
+          "creation_date": "2023-05-22",
+          "reused_from": {
+            "application_id": "APP-0013",
+            "filename": "upload_3.pdf"
+          }
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "affidavit",
+          "sha256": "2ca4113b52ff5e22dcc217d8dfdb3a7e2e81cb5cf3eb52bcb3433a312d7423f7",
+          "fields": {
+            "institution_name_written": "Saraswathi Pau School of Engineering and Technology",
+            "institution_name_canonical": "Saraswathi Pau School of Engineering and Technology",
+            "institution_id": "1-37434064274",
+            "issue_date": "2026-03-08",
+            "expiry_date": null,
+            "intake": 300,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "CRO/1-37434064274/2025/EOA"
+          },
+          "layout": "L4",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "exact",
+          "creation_date": "2026-03-27"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0034",
+      "plan_key": "C06",
+      "category": "eoa_new_course",
+      "split": "test",
+      "label": "clean",
+      "institution_id": "1-10487258103",
+      "institution_name": "Saraswathi Sant Institute of Engineering and Technology",
+      "region": "CRO",
+      "submission_date": "2026-03-06",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter",
+        "accreditation_certificate"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "accreditation_certificate",
+          "sha256": "b10b34210875eca43c63d9664df0e12cfa0406ff27086d03c48040b627a386d9",
+          "fields": {
+            "institution_name_written": "Saraswathi Sant Institute of Engineering and Technology, Raipur",
+            "institution_name_canonical": "Saraswathi Sant Institute of Engineering and Technology",
+            "institution_id": "1-10487258103",
+            "issue_date": "2024-06-27",
+            "expiry_date": "2027-06-27",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2024-07-18"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "affidavit",
+          "sha256": "e07c5ab81cdf20b6029c6106a34d0e4797b9516acbf054a751998b8cf1a7c724",
+          "fields": {
+            "institution_name_written": "Saraswathi Sant Institute of Engineering & Technology",
+            "institution_name_canonical": "Saraswathi Sant Institute of Engineering and Technology",
+            "institution_id": "1-10487258103",
+            "issue_date": "2026-02-27",
+            "expiry_date": null,
+            "intake": 360,
+            "proposed_intake": 120,
+            "reference_id": null,
+            "letter_id": "CRO/1-10487258103/2025/EOA"
+          },
+          "layout": "L4",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2026-03-15"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "lease",
+          "sha256": "36b5ae19437ca29ded494e5804abbbed8b7a80a8914fff86a2ef49102ef8e082",
+          "fields": {
+            "institution_name_written": "Saraswathi Sant Institute of Engineering and Technology (Autonomous)",
+            "institution_name_canonical": "Saraswathi Sant Institute of Engineering and Technology",
+            "institution_id": null,
+            "issue_date": "2024-08-05",
+            "expiry_date": "2035-08-03",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "sans",
+          "pages": 2,
+          "name_variant": "autonomous",
+          "creation_date": "2024-08-19"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "75f136820894d1f83cb0ad2acf09706ff89f18ade6cafffbeab36a0fd939c62d",
+          "fields": {
+            "institution_name_written": "Saraswathi Sant Institute of Engineering and Technology (Autonomous)",
+            "institution_name_canonical": "Saraswathi Sant Institute of Engineering and Technology",
+            "institution_id": "1-10487258103",
+            "issue_date": "2025-09-04",
+            "expiry_date": "2028-09-03",
+            "intake": 360,
+            "proposed_intake": null,
+            "reference_id": "AFL-CRO-2025-0004291",
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "autonomous",
+          "creation_date": "2025-10-04"
+        },
+        {
+          "filename": "upload_5.pdf",
+          "doc_type": "noc",
+          "sha256": "a5536c95dd122c2ce9f67cf6eb66f3137d9c57121c528442ba9e0a797e2ad659",
+          "fields": {
+            "institution_name_written": "Saraswathi Sant Inst. of Engg. and Technology",
+            "institution_name_canonical": "Saraswathi Sant Institute of Engineering and Technology",
+            "institution_id": "1-10487258103",
+            "issue_date": "2025-09-30",
+            "expiry_date": "2028-09-29",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-CRO-2025-0004299",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2025-10-25"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0035",
+      "plan_key": "D01",
+      "category": "eoa_new_course",
+      "split": "dev",
+      "label": "defective",
+      "institution_id": "1-81903986009",
+      "institution_name": "Bharathi Raval Institute of Science and Technology",
+      "region": "WRO",
+      "submission_date": "2026-03-08",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter",
+        "accreditation_certificate"
+      ],
+      "defects": [
+        {
+          "defect_type": "expired_accreditation",
+          "doc_type": "accreditation_certificate",
+          "detail": {
+            "expiry_date": "2025-11-16",
+            "submission_date": "2026-03-08"
+          }
+        },
+        {
+          "defect_type": "expired_lease",
+          "doc_type": "lease",
+          "detail": {
+            "expiry_date": "2025-12-02",
+            "submission_date": "2026-03-08"
+          }
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "accreditation_certificate",
+          "sha256": "bf8da5e02eab9fdba77e599d32e22070277a9d86194bd6f443334c60e3ed2cb5",
+          "fields": {
+            "institution_name_written": "Bharathi Raval Institute of Science and Technology (Autonomous)",
+            "institution_name_canonical": "Bharathi Raval Institute of Science and Technology",
+            "institution_id": "1-81903986009",
+            "issue_date": "2022-11-17",
+            "expiry_date": "2025-11-16",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "autonomous",
+          "creation_date": "2022-11-17"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "lease",
+          "sha256": "fa46403741db0a4e6de73f056870752d2208a1bdd5e39b651cbb6779ef72744e",
+          "fields": {
+            "institution_name_written": "M/s Bharathi Raval Institute of Science and Technology",
+            "institution_name_canonical": "Bharathi Raval Institute of Science and Technology",
+            "institution_id": null,
+            "issue_date": "2014-12-05",
+            "expiry_date": "2025-12-02",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "serif",
+          "pages": 2,
+          "name_variant": "ms_prefix",
+          "creation_date": "2014-12-10"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "067b8295564cd296715308fe89fc12b9792e4394426d49762b92ac3a402a6ae2",
+          "fields": {
+            "institution_name_written": "Bharathi Raval Institute of Science and Technology",
+            "institution_name_canonical": "Bharathi Raval Institute of Science and Technology",
+            "institution_id": "1-81903986009",
+            "issue_date": "2025-06-16",
+            "expiry_date": "2028-06-15",
+            "intake": 60,
+            "proposed_intake": null,
+            "reference_id": "AFL-WRO-2025-0004305",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "exact",
+          "creation_date": "2025-07-14"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "noc",
+          "sha256": "6ae95eacfaf02c4f91d47663d2a1ded63c94f150b90ff3f34625c437582640c0",
+          "fields": {
+            "institution_name_written": "Bharathi Raval Institute of Science & Technology",
+            "institution_name_canonical": "Bharathi Raval Institute of Science and Technology",
+            "institution_id": "1-81903986009",
+            "issue_date": "2024-09-14",
+            "expiry_date": "2027-09-14",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-WRO-2024-0004309",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "ampersand",
+          "creation_date": "2024-09-29"
+        },
+        {
+          "filename": "upload_5.pdf",
+          "doc_type": "affidavit",
+          "sha256": "d1887a0e765cbd81066f62958833b4d878a0022c769a2cb35c8369e7846a2f44",
+          "fields": {
+            "institution_name_written": "M/s Bharathi Raval Institute of Science and Technology",
+            "institution_name_canonical": "Bharathi Raval Institute of Science and Technology",
+            "institution_id": "1-81903986009",
+            "issue_date": "2026-02-11",
+            "expiry_date": null,
+            "intake": 60,
+            "proposed_intake": 120,
+            "reference_id": null,
+            "letter_id": "WRO/1-81903986009/2025/EOA"
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2026-02-19"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0036",
+      "plan_key": "D03",
+      "category": "eoa_new_course",
+      "split": "dev",
+      "label": "defective",
+      "institution_id": "1-77264638054",
+      "institution_name": "Annai Bath School of Engineering and Technology",
+      "region": "NRO",
+      "submission_date": "2026-02-18",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter",
+        "accreditation_certificate"
+      ],
+      "defects": [
+        {
+          "defect_type": "intake_mismatch",
+          "doc_type": "affiliation_letter",
+          "detail": {
+            "document_intake": 240,
+            "records_intake": 180
+          }
+        },
+        {
+          "defect_type": "expired_accreditation",
+          "doc_type": "accreditation_certificate",
+          "detail": {
+            "expiry_date": "2026-01-15",
+            "submission_date": "2026-02-18"
+          }
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affidavit",
+          "sha256": "ee82cddc7d48e62806e94312e482b1d41273240abc49faec0d932e5bff20b8cd",
+          "fields": {
+            "institution_name_written": "Annai Bath School of Engineering and Technology (Autonomous)",
+            "institution_name_canonical": "Annai Bath School of Engineering and Technology",
+            "institution_id": "1-77264638054",
+            "issue_date": "2026-02-11",
+            "expiry_date": null,
+            "intake": 180,
+            "proposed_intake": 120,
+            "reference_id": null,
+            "letter_id": "NRO/1-77264638054/2025/EOA"
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "autonomous",
+          "creation_date": "2026-02-26"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "327572aeaa251bb424ee6650b1f5cd509f157345a34ee42fb7ee7b14b59c20ad",
+          "fields": {
+            "institution_name_written": "Annai Bath School of Engineering and Technology, Dehradun",
+            "institution_name_canonical": "Annai Bath School of Engineering and Technology",
+            "institution_id": "1-77264638054",
+            "issue_date": "2025-04-04",
+            "expiry_date": "2028-04-03",
+            "intake": 240,
+            "proposed_intake": null,
+            "reference_id": "AFL-NRO-2025-0004314",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2025-04-15"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "lease",
+          "sha256": "f3ea6583a65c83a7cf99f60cebe86ac16c9313a4275a2d694f442d815fd169d4",
+          "fields": {
+            "institution_name_written": "M/s Annai Bath School of Engineering and Technology",
+            "institution_name_canonical": "Annai Bath School of Engineering and Technology",
+            "institution_id": null,
+            "issue_date": "2023-12-06",
+            "expiry_date": "2034-12-03",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 2,
+          "name_variant": "ms_prefix",
+          "creation_date": "2023-12-11"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "noc",
+          "sha256": "985eeef5ec61f9a4a96c7c8e17fff64e0ff369dd98e33a5c961fbd71271830bf",
+          "fields": {
+            "institution_name_written": "Annai Bath School of Engineering and Technology, Dehradun",
+            "institution_name_canonical": "Annai Bath School of Engineering and Technology",
+            "institution_id": "1-77264638054",
+            "issue_date": "2025-07-02",
+            "expiry_date": "2028-07-01",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-NRO-2025-0004319",
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2025-07-10"
+        },
+        {
+          "filename": "upload_5.pdf",
+          "doc_type": "accreditation_certificate",
+          "sha256": "dd48fd296584814ee628c5bc99678630f0d430e7b98bcdaec5de7333e84945b4",
+          "fields": {
+            "institution_name_written": "Annai Bath School of Engg. & Technology",
+            "institution_name_canonical": "Annai Bath School of Engineering and Technology",
+            "institution_id": "1-77264638054",
+            "issue_date": "2023-01-16",
+            "expiry_date": "2026-01-15",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2023-02-06"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0037",
+      "plan_key": "D02",
+      "category": "eoa_new_course",
+      "split": "test",
+      "label": "defective",
+      "institution_id": "1-99146182606",
+      "institution_name": "Bharathi Munshi School of Engineering and Technology",
+      "region": "ERO",
+      "submission_date": "2026-02-08",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter",
+        "accreditation_certificate"
+      ],
+      "defects": [
+        {
+          "defect_type": "expired_accreditation",
+          "doc_type": "accreditation_certificate",
+          "detail": {
+            "expiry_date": "2025-07-24",
+            "submission_date": "2026-02-08"
+          }
+        },
+        {
+          "defect_type": "qr_absent",
+          "doc_type": "affiliation_letter",
+          "detail": {
+            "reference_id": "AFL-ERO-2025-0004321"
+          }
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affidavit",
+          "sha256": "95b18969d9c4e2f0a6df48f9b97b2f327dc021052100d25c5afc59d81599ede5",
+          "fields": {
+            "institution_name_written": "BHARATHI MUNSHI SCHOOL OF ENGINEERING AND TECHNOLOGY",
+            "institution_name_canonical": "Bharathi Munshi School of Engineering and Technology",
+            "institution_id": "1-99146182606",
+            "issue_date": "2026-02-05",
+            "expiry_date": null,
+            "intake": 360,
+            "proposed_intake": 60,
+            "reference_id": null,
+            "letter_id": "ERO/1-99146182606/2025/EOA"
+          },
+          "layout": "L4",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2026-02-08"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "accreditation_certificate",
+          "sha256": "63e4bfec2a8a45caafeace9fd2e0cb161d12b20109c98b4ee90ed70b544cfada",
+          "fields": {
+            "institution_name_written": "Bharathi Munshi School of Engg. & Tech.",
+            "institution_name_canonical": "Bharathi Munshi School of Engineering and Technology",
+            "institution_id": "1-99146182606",
+            "issue_date": "2022-07-25",
+            "expiry_date": "2025-07-24",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2022-08-12"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "lease",
+          "sha256": "8e75d9903dd932d20af2c2d84b1269df04fb31914e2e0669c79b547406e0fa1e",
+          "fields": {
+            "institution_name_written": "Bharathi Munshi School of Engineering and Technology",
+            "institution_name_canonical": "Bharathi Munshi School of Engineering and Technology",
+            "institution_id": null,
+            "issue_date": "2025-03-05",
+            "expiry_date": "2036-03-02",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "mono",
+          "pages": 2,
+          "name_variant": "exact",
+          "creation_date": "2025-04-03"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "109816f56a7199894652ff6b4eccad46e5ec059909389a0b5b40727fcac980ee",
+          "fields": {
+            "institution_name_written": "Bharathi Munshi School of Engineering and Technology, Guwahati",
+            "institution_name_canonical": "Bharathi Munshi School of Engineering and Technology",
+            "institution_id": "1-99146182606",
+            "issue_date": "2025-09-06",
+            "expiry_date": "2028-09-05",
+            "intake": 360,
+            "proposed_intake": null,
+            "reference_id": "AFL-ERO-2025-0004321",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2025-10-02"
+        },
+        {
+          "filename": "upload_5.pdf",
+          "doc_type": "noc",
+          "sha256": "b09a1993b4920ac0e7308e760066e6762d077bd9153155d00ea509116ba08131",
+          "fields": {
+            "institution_name_written": "Bharathi Munshi School of Engineering and Technology, Guwahati",
+            "institution_name_canonical": "Bharathi Munshi School of Engineering and Technology",
+            "institution_id": "1-99146182606",
+            "issue_date": "2025-07-23",
+            "expiry_date": "2028-07-22",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-ERO-2025-0004328",
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2025-07-23"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0038",
+      "plan_key": "C01",
+      "category": "eoa_new_course",
+      "split": "dev",
+      "label": "clean",
+      "institution_id": "1-28138552030",
+      "institution_name": "Annai Choudhury Institute of Technology",
+      "region": "SRO",
+      "submission_date": "2026-02-05",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter",
+        "accreditation_certificate"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "d2e23bfbadf4d63d58c207fa97cc62c7e94efb5cbbde744639963092d5fb51c5",
+          "fields": {
+            "institution_name_written": "M/s Annai Choudhury Institute of Technology",
+            "institution_name_canonical": "Annai Choudhury Institute of Technology",
+            "institution_id": "1-28138552030",
+            "issue_date": "2025-03-30",
+            "expiry_date": "2028-03-29",
+            "intake": 360,
+            "proposed_intake": null,
+            "reference_id": "AFL-SRO-2025-0004329",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "serif",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2025-04-26"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "accreditation_certificate",
+          "sha256": "2a680b0281d2e81afe0bf28b080ba9b334d6779d3592a3296fc1e8208e30ef3d",
+          "fields": {
+            "institution_name_written": "Annai Choudhury Inst. of Tech.",
+            "institution_name_canonical": "Annai Choudhury Institute of Technology",
+            "institution_id": "1-28138552030",
+            "issue_date": "2024-07-07",
+            "expiry_date": "2027-07-07",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2024-07-15"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affidavit",
+          "sha256": "49c03e74a685db5f6a8a6afa8c5855fc2cfce89eb2aa801c6cd3c6b7117c94c4",
+          "fields": {
+            "institution_name_written": "Annai Choudhury Institute of Tech.",
+            "institution_name_canonical": "Annai Choudhury Institute of Technology",
+            "institution_id": "1-28138552030",
+            "issue_date": "2026-01-21",
+            "expiry_date": null,
+            "intake": 360,
+            "proposed_intake": 60,
+            "reference_id": null,
+            "letter_id": "SRO/1-28138552030/2025/EOA"
+          },
+          "layout": "L2",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2026-01-28"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "lease",
+          "sha256": "340642c9064a9d964babd178612e03d117aa32fdc8b656425185407681d72add",
+          "fields": {
+            "institution_name_written": "Annai Choudhury Institute of Technology (Autonomous)",
+            "institution_name_canonical": "Annai Choudhury Institute of Technology",
+            "institution_id": null,
+            "issue_date": "2023-07-09",
+            "expiry_date": "2034-07-06",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "serif",
+          "pages": 2,
+          "name_variant": "autonomous",
+          "creation_date": "2023-07-30"
+        },
+        {
+          "filename": "upload_5.pdf",
+          "doc_type": "noc",
+          "sha256": "3aceadb576a1d2f026d3f58bd29823be07e2a912990d254cbc73822f1af38176",
+          "fields": {
+            "institution_name_written": "Annai Choudhury Inst. of Tech.",
+            "institution_name_canonical": "Annai Choudhury Institute of Technology",
+            "institution_id": "1-28138552030",
+            "issue_date": "2024-05-18",
+            "expiry_date": "2027-05-18",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-SRO-2024-0004331",
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2024-06-10"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0039",
+      "plan_key": "C10",
+      "category": "eoa_renewal_basic",
+      "split": "dev",
+      "label": "clean",
+      "institution_id": "1-99100122897",
+      "institution_name": "Sunrise Sunder Institute of Engineering and Technology",
+      "region": "NRO",
+      "submission_date": "2026-03-06",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter"
+      ],
+      "defects": [],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "lease",
+          "sha256": "ae85f11c3e1fa7e13cbe395014782df5f2ebc84ca9cb0710bd51bf914163bf75",
+          "fields": {
+            "institution_name_written": "Sunrise Sunder Institute of Engineering & Technology",
+            "institution_name_canonical": "Sunrise Sunder Institute of Engineering and Technology",
+            "institution_id": null,
+            "issue_date": "2023-11-18",
+            "expiry_date": "2034-11-15",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "serif",
+          "pages": 2,
+          "name_variant": "ampersand",
+          "creation_date": "2023-12-06"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "affidavit",
+          "sha256": "10e21f4e6ef3974f14f8555f50adb6a25057d9485c66c751dda1977d60060bc3",
+          "fields": {
+            "institution_name_written": "Sunrise Sunder Institute of Engineering and Technology, Dehradun",
+            "institution_name_canonical": "Sunrise Sunder Institute of Engineering and Technology",
+            "institution_id": "1-99100122897",
+            "issue_date": "2026-02-18",
+            "expiry_date": null,
+            "intake": 60,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "NRO/1-99100122897/2025/EOA"
+          },
+          "layout": "L1",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "city_suffix",
+          "creation_date": "2026-03-13"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "d5baf9329fb44bacf2c528c40c6e7fde924ee58ad027316d8a29ee753a40153f",
+          "fields": {
+            "institution_name_written": "Sunrise Sunder Institute of Engineering and Technology (Autonomous)",
+            "institution_name_canonical": "Sunrise Sunder Institute of Engineering and Technology",
+            "institution_id": "1-99100122897",
+            "issue_date": "2025-04-27",
+            "expiry_date": "2028-04-26",
+            "intake": 60,
+            "proposed_intake": null,
+            "reference_id": "AFL-NRO-2025-0004332",
+            "letter_id": null
+          },
+          "layout": "L1",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "autonomous",
+          "creation_date": "2025-05-05"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "noc",
+          "sha256": "1655e653be62a37e048a26a661001a484c28273cfd1c36f7b2921061702c35b1",
+          "fields": {
+            "institution_name_written": "M/s Sunrise Sunder Institute of Engineering and Technology",
+            "institution_name_canonical": "Sunrise Sunder Institute of Engineering and Technology",
+            "institution_id": "1-99100122897",
+            "issue_date": "2024-10-22",
+            "expiry_date": "2027-10-22",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-NRO-2024-0004338",
+            "letter_id": null
+          },
+          "layout": "L2",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "ms_prefix",
+          "creation_date": "2024-11-18"
+        }
+      ]
+    },
+    {
+      "application_id": "APP-0040",
+      "plan_key": "D07",
+      "category": "eoa_renewal_basic",
+      "split": "test",
+      "label": "defective",
+      "institution_id": "1-34838683566",
+      "institution_name": "Ganga Din Institute of Science and Technology",
+      "region": "SRO",
+      "submission_date": "2026-02-17",
+      "required_documents": [
+        "affidavit",
+        "noc",
+        "lease",
+        "affiliation_letter"
+      ],
+      "defects": [
+        {
+          "defect_type": "expired_lease",
+          "doc_type": "lease",
+          "detail": {
+            "expiry_date": "2025-04-14",
+            "submission_date": "2026-02-17"
+          }
+        }
+      ],
+      "documents": [
+        {
+          "filename": "upload_1.pdf",
+          "doc_type": "affiliation_letter",
+          "sha256": "5d0e664f78c6cd0078c3866aa56ea6cecc4211fdf1350fb94726fc29f139e978",
+          "fields": {
+            "institution_name_written": "GANGA DIN INSTITUTE OF SCIENCE AND TECHNOLOGY",
+            "institution_name_canonical": "Ganga Din Institute of Science and Technology",
+            "institution_id": "1-34838683566",
+            "issue_date": "2025-03-20",
+            "expiry_date": "2028-03-19",
+            "intake": 180,
+            "proposed_intake": null,
+            "reference_id": "AFL-SRO-2025-0004341",
+            "letter_id": null
+          },
+          "layout": "L4",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "upper",
+          "creation_date": "2025-04-15"
+        },
+        {
+          "filename": "upload_2.pdf",
+          "doc_type": "lease",
+          "sha256": "b7804d585937b111dba73808ef094c7f9c2cc632308b9ef78d8d99ee3134d18b",
+          "fields": {
+            "institution_name_written": "Ganga Din Institute of Science and Technology (Autonomous)",
+            "institution_name_canonical": "Ganga Din Institute of Science and Technology",
+            "institution_id": null,
+            "issue_date": "2014-04-17",
+            "expiry_date": "2025-04-14",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 2,
+          "name_variant": "autonomous",
+          "creation_date": "2014-04-30"
+        },
+        {
+          "filename": "upload_3.pdf",
+          "doc_type": "affidavit",
+          "sha256": "097a860e04823d18a4367911cfd7faf058aebf1af348b304c1781f42607cf68f",
+          "fields": {
+            "institution_name_written": "Ganga Din Institute of Science and Technology",
+            "institution_name_canonical": "Ganga Din Institute of Science and Technology",
+            "institution_id": "1-34838683566",
+            "issue_date": "2026-02-15",
+            "expiry_date": null,
+            "intake": 180,
+            "proposed_intake": null,
+            "reference_id": null,
+            "letter_id": "SRO/1-34838683566/2025/EOA"
+          },
+          "layout": "L4",
+          "font": "sans",
+          "pages": 1,
+          "name_variant": "exact",
+          "creation_date": "2026-02-22"
+        },
+        {
+          "filename": "upload_4.pdf",
+          "doc_type": "noc",
+          "sha256": "7e745eac3e3a7e95f3b3ce980ccc409a08f94add239ab98b4b54258859f02e75",
+          "fields": {
+            "institution_name_written": "Ganga Din Institute of Science & Tech.",
+            "institution_name_canonical": "Ganga Din Institute of Science and Technology",
+            "institution_id": "1-34838683566",
+            "issue_date": "2024-07-22",
+            "expiry_date": "2027-07-22",
+            "intake": null,
+            "proposed_intake": null,
+            "reference_id": "NOC-SRO-2024-0004347",
+            "letter_id": null
+          },
+          "layout": "L3",
+          "font": "mono",
+          "pages": 1,
+          "name_variant": "abbrev",
+          "creation_date": "2024-08-02"
+        }
+      ]
+    }
+  ]
+}

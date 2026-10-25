@@ -1,0 +1,93 @@
+{
+ "simulated": true,
+ "tick_minutes": 5.0,
+ "days": 9.0,
+ "ticks": 2593,
+ "alerts": 18,
+ "mean_engine_ms_per_tick": 9.9,
+ "max_engine_ms_per_tick": 85.7,
+ "per_rule": {
+  "AL-CLARIF-OVERDUE": {
+   "alerts": 1,
+   "resolved": 0,
+   "detection_lag": {
+    "n": 1,
+    "mean_min": 0.0,
+    "max_min": 0.0
+   },
+   "escalation_delay": {
+    "n": 0,
+    "mean_min": null,
+    "max_min": null
+   }
+  },
+  "AL-HIGH-OPEN": {
+   "alerts": 11,
+   "resolved": 1,
+   "detection_lag": {
+    "n": 11,
+    "mean_min": 0.0,
+    "max_min": 0.0
+   },
+   "escalation_delay": {
+    "n": 18,
+    "mean_min": 0.0,
+    "max_min": 0.0
+   }
+  },
+  "AL-MEDIUM-OPEN": {
+   "alerts": 5,
+   "resolved": 0,
+   "detection_lag": {
+    "n": 5,
+    "mean_min": 0.0,
+    "max_min": 0.0
+   },
+   "escalation_delay": {
+    "n": 10,
+    "mean_min": 0.0,
+    "max_min": 0.0
+   }
+  },
+  "AL-VERIF-STUCK": {
+   "alerts": 1,
+   "resolved": 0,
+   "detection_lag": {
+    "n": 1,
+    "mean_min": 4.0,
+    "max_min": 4.0
+   },
+   "escalation_delay": {
+    "n": 2,
+    "mean_min": 4.0,
+    "max_min": 4.0
+   }
+  }
+ },
+ "detection_lag_all": {
+  "n": 18,
+  "mean_min": 0.22,
+  "max_min": 4.0
+ },
+ "escalation_delay_all": {
+  "n": 30,
+  "mean_min": 0.27,
+  "max_min": 4.0
+ },
+ "escalations_after_acknowledgement": 0,
+ "duplicate_dedup_keys": 0,
+ "resolution_lag_after_decision": {
+  "n": 1,
+  "mean_min": 0.0,
+  "max_min": 0.0
+ },
+ "within_one_tick": {
+  "detections": 18,
+  "escalations": 30
+ },
+ "notifications": {
+  "email_mock": 49,
+  "in_app": 49
+ },
+ "audit_chain_ok": true
+}

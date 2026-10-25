@@ -1,0 +1,153 @@
+{
+  "id": "eoa_renewal_basic",
+  "title": "EoA - Renewal (basic)",
+  "required_documents": [
+    "affidavit",
+    "noc",
+    "lease",
+    "affiliation_letter"
+  ],
+  "rules": [
+    {
+      "id": "R-MISS-AFFIDAVIT",
+      "doc": "affidavit",
+      "check": "present",
+      "severity": "high",
+      "message": "Required document missing: affidavit."
+    },
+    {
+      "id": "R-MISS-NOC",
+      "doc": "noc",
+      "check": "present",
+      "severity": "high",
+      "message": "Required document missing: noc."
+    },
+    {
+      "id": "R-MISS-LEASE",
+      "doc": "lease",
+      "check": "present",
+      "severity": "high",
+      "message": "Required document missing: lease."
+    },
+    {
+      "id": "R-MISS-AFFILIATION_LETTER",
+      "doc": "affiliation_letter",
+      "check": "present",
+      "severity": "high",
+      "message": "Required document missing: affiliation letter."
+    },
+    {
+      "id": "R-EXP-NOC",
+      "doc": "noc",
+      "check": "not_expired",
+      "severity": "high",
+      "message": "Noc is expired as of the application submission date."
+    },
+    {
+      "id": "R-EXP-LEASE",
+      "doc": "lease",
+      "check": "not_expired",
+      "severity": "high",
+      "message": "Lease is expired as of the application submission date."
+    },
+    {
+      "id": "R-EXP-AFFILIATION_LETTER",
+      "doc": "affiliation_letter",
+      "check": "not_expired",
+      "severity": "high",
+      "message": "Affiliation Letter is expired as of the application submission date."
+    },
+    {
+      "id": "R-NAME-CONSIST",
+      "doc": "*",
+      "check": "name_consistent",
+      "severity": "high",
+      "message": "Institution name differs between documents of the same application."
+    },
+    {
+      "id": "R-ID-CONSIST",
+      "doc": "*",
+      "check": "id_consistent",
+      "severity": "high",
+      "message": "Institution/letter identifier differs between documents of the same application."
+    },
+    {
+      "id": "R-REC-NAME",
+      "doc": "*",
+      "check": "matches_records_name",
+      "severity": "medium",
+      "message": "Institution name does not match the (MOCK) AICTE record."
+    },
+    {
+      "id": "R-REC-INTAKE",
+      "doc": [
+        "affidavit",
+        "affiliation_letter"
+      ],
+      "check": "matches_records_intake",
+      "severity": "high",
+      "message": "Intake stated in the document differs from the (MOCK) AICTE record."
+    },
+    {
+      "id": "R-VER-NOC",
+      "doc": "noc",
+      "check": "issuer_verified",
+      "severity": "high",
+      "message": "QR/reference of noc could not be verified against the (MOCK) issuer registry."
+    },
+    {
+      "id": "R-VER-AFFILIATION_LETTER",
+      "doc": "affiliation_letter",
+      "check": "issuer_verified",
+      "severity": "high",
+      "message": "QR/reference of affiliation letter could not be verified against the (MOCK) issuer registry."
+    },
+    {
+      "id": "R-META",
+      "doc": "*",
+      "check": "metadata_consistent",
+      "severity": "medium",
+      "message": "PDF creation metadata is inconsistent with the stated issue date."
+    },
+    {
+      "id": "R-DUP",
+      "doc": "*",
+      "check": "not_duplicate",
+      "severity": "high",
+      "message": "Identical file (SHA-256) was submitted in another application."
+    },
+    {
+      "id": "R-SIG",
+      "doc": "*",
+      "check": "signature_valid",
+      "severity": "medium",
+      "message": "Digital signature check did not return valid (advisory)."
+    },
+    {
+      "id": "R-TAMPER",
+      "doc": "*",
+      "check": "no_tamper_indicator",
+      "severity": "medium",
+      "message": "Image-forensic tamper indicator raised (advisory, capped at medium)."
+    },
+    {
+      "id": "R-APH-DSC",
+      "doc": "*",
+      "check": "dsc_present",
+      "severity": "medium",
+      "enabled": false,
+      "message": "Document is not digitally signed (APH 1.4.6: documents uploaded without the Chairman/Secretary's DSC are not valid)."
+    },
+    {
+      "id": "R-APH-LEASE-TERM",
+      "doc": "lease",
+      "check": "lease_term_remaining",
+      "severity": "medium",
+      "enabled": false,
+      "params": {
+        "min_years": 4
+      },
+      "message": "Remaining lease term is shorter than the longest course (APH 2.1(e): a 30-year extension is needed for EoA)."
+    }
+  ]
+}

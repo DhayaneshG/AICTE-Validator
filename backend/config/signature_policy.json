@@ -1,0 +1,5 @@
+{
+  "_note": "Signature policy. The trust anchor is the MOCK root CA in backend/mock/trust_root (synthetic). A real deployment would load the issuing authorities' real trust roots here.",
+  "trust_roots": ["backend/mock/trust_root/root_ca.pem"],
+  "authorised_signer_orgs": ["MOCK Issuing Authority (synthetic)"]
+}
